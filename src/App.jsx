@@ -1,7 +1,14 @@
 import "./App.css";
+import Sidebar from "./components/sidebar";
+import Home from "./components/Home";
 
 function App() {
-  return <>Dev Portfolio</>;
+  return (
+    <>
+      <Sidebar />
+      <Home />
+    </>
+  );
 }
 
 export default App;
