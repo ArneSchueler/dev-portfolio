@@ -1,5 +1,9 @@
-function IconButton({ icon }) {
-  return <button className="btn">{icon}</button>;
+function IconButton({ name, icon }) {
+  return (
+    <button aria-label={name} className="btn">
+      {icon}
+    </button>
+  );
 }
 
 export default IconButton;

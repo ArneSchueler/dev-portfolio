@@ -55,10 +55,10 @@ function Sidebar() {
     <aside>
       <Logo />
       <div className="sidebar-button-container">
-        <IconButton icon={homeIcon} />
-        <IconButton icon={projectIcon} />
-        <IconButton icon={aboutIcon} />
-        <IconButton icon={contactIcon} />
+        <IconButton name="homeIcon" icon={homeIcon} />
+        <IconButton name="projectIcon" icon={projectIcon} />
+        <IconButton name="aboutIcon" icon={aboutIcon} />
+        <IconButton name="contactIcon" icon={contactIcon} />
       </div>
 
       <LanguageButton />
