@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family-general);
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,9 +11,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --font-family-tech: "JetBrains Mono", monospace;
-  --muted-grey: #7f7f7f;
 }
 
 * {
@@ -28,16 +23,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-.tech-stack-container {
-  font-family: var(--font-family-tech);
-  letter-spacing: 8px;
-  font-size: 20px;
-  color: var(--muted-grey);
-  padding-inline: 10px;
-  padding-block: 24px;
-  border-block: 0.5px solid var(--muted-grey);
 }
 
 main {
