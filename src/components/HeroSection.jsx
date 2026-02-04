@@ -1,4 +1,4 @@
-import TechStack from "./TechStack";
+import TechStack from "./TechStack/TechStack";
 import Button from "./buttons/Button";
 import ProfileImg from "./ProfileImg";
 
