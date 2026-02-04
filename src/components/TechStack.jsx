@@ -1,8 +1,7 @@
 export default function TechStack() {
   return (
     <div className="tech-stack-container">
-      <span>HTML</span>
-      <span>CSS</span>
+      <span>HTML · CSS · JavaScript · React · Accessibility</span>
     </div>
   );
 }

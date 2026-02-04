@@ -13,6 +13,11 @@ export default function Home() {
         subhead={heroSubheader}
         buttonLabel={heroButtonLabel}
       />
+      <HeroSection
+        header={heroHeader}
+        subhead={heroSubheader}
+        buttonLabel={heroButtonLabel}
+      />
     </main>
   );
 }
