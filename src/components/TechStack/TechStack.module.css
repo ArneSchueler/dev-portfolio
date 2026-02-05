@@ -1,9 +1,0 @@
-.tech-stack-container {
-  font-family: var(--font-family-tech);
-  letter-spacing: 8px;
-  font-size: 20px;
-  color: var(--muted-grey);
-  padding-inline: 10px;
-  padding-block: 24px;
-  border-block: 0.5px solid var(--muted-grey);
-}
