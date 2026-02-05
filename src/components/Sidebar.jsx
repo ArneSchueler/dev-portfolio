@@ -1,6 +1,5 @@
-import IconButton from "./buttons/IconButton";
-import LanguageButton from "./buttons/languageButton";
-import Logo from "./Logo";
+import IconButton from "./Buttons/IconButton";
+import LanguageButton from "./Buttons/languageButton";
 
 const homeIcon = (
   <svg
@@ -50,12 +49,20 @@ const contactIcon = (
   </svg>
 );
 
+function Logo() {
+  return <p className="font-tech writing-vertical rotate-180">schueler.dev</p>;
+}
+
 function Sidebar() {
   return (
-    <aside>
+    <aside className="flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
       <Logo />
-      <div className="sidebar-button-container">
-        <IconButton name="homeIcon" icon={homeIcon} />
+      <div className="flex flex-col gap-8">
+        <IconButton
+          className="text-cyan-500 border-b-2"
+          name="homeIcon"
+          icon={homeIcon}
+        />
         <IconButton name="projectIcon" icon={projectIcon} />
         <IconButton name="aboutIcon" icon={aboutIcon} />
         <IconButton name="contactIcon" icon={contactIcon} />
