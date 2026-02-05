@@ -7,17 +7,8 @@ const heroButtonLabel = "View projects →";
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection
-        header={heroHeader}
-        subhead={heroSubheader}
-        buttonLabel={heroButtonLabel}
-      />
-      <HeroSection
-        header={heroHeader}
-        subhead={heroSubheader}
-        buttonLabel={heroButtonLabel}
-      />
+    <main className="flex max-h-dvh w-vw h-vh ms-30 p-40">
+      <HeroSection header={heroHeader} subhead={heroSubheader} />
     </main>
   );
 }
