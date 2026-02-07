@@ -1,4 +1,5 @@
-import HeroSection from "./HeroSection";
+import HeroSection from "../sections/HeroSection.jsx";
+import ProjectsSection from "../sections/ProjectsSection";
 
 const heroHeader = "Frontend Developer with UX focus";
 const heroSubheader =
@@ -7,8 +8,9 @@ const heroButtonLabel = "View projects →";
 
 export default function Home() {
   return (
-    <main className="flex max-h-dvh w-vw h-vh ms-30 p-40">
+    <>
       <HeroSection header={heroHeader} subhead={heroSubheader} />
-    </main>
+      <ProjectsSection></ProjectsSection>
+    </>
   );
 }

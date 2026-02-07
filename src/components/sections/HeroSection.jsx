@@ -1,6 +1,5 @@
-import Button from "./Buttons/Button";
-
-const sectionStyle = "flex flex-col text-blue-300 font-general w-dvw h-dvh";
+import Button from "../ui/Buttons/Button.jsx";
+import { hero } from "../../content/hero/hero-en.js";
 
 function TechStack() {
   return (
@@ -22,13 +21,16 @@ function ProfileImg() {
   );
 }
 
-export default function HeroSection({ header, subhead }) {
+export default function HeroSection() {
   return (
-    <section className="flex flex-col w-full h-full text-slate-950 gap-12">
+    <section className="flex flex-col w-full h-dvh text-slate-950 gap-12">
       <div className="flex flex-col gap-4">
-        <h1 className="text-7xl font-semibold">{header}</h1>
-        <p>{subhead}</p>
-        <Button />
+        <h1 className="text-7xl font-semibold">{hero.titleline1}</h1>
+        <h1 className="text-7xl font-semibold">{hero.titleline2}</h1>
+        <p>{hero.subhead}</p>
+        <Button aria-label={hero.button.ariaLabel} variant="primary">
+          {hero.buttonLabel}
+        </Button>{" "}
       </div>
       <TechStack />
       <ProfileImg />
