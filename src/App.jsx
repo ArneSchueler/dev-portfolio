@@ -1,12 +1,16 @@
-import "./App.css";
 import Sidebar from "./components/sidebar";
-import Home from "./components/Home";
+import HeroSection from "./components/sections/HeroSection";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
     <>
-      <Sidebar />
-      <Home />
+      <header>
+        <Sidebar />
+      </header>
+      <main className="flex flex-col w-vw  ms-30 p-40">
+        <Home />
+      </main>
     </>
   );
 }
