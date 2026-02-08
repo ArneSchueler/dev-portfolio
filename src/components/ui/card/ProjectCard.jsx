@@ -16,8 +16,8 @@ export default function ProjectCard({
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className="flex justify-between border-b-1 pb-6">
-        <Button>View projects →</Button>
+      <div className="flex justify-between border-b pb-6">
+        <Button variant="tertiary">View projects →</Button>
         <div>
           <Button variant="primary">
             <Icon1 />

@@ -3,7 +3,7 @@ import { hero } from "../../content/hero/hero-en.js";
 
 function TechStack() {
   return (
-    <div className="flex w-fit m-8 border-y py-6">
+    <div className="flex w-fit border-y py-6 snap-center">
       <span className="text-slate-600 tracking-[8px] font-tech">
         HTML · CSS · JavaScript · React · Accessibility
       </span>
@@ -14,7 +14,7 @@ function TechStack() {
 function ProfileImg() {
   return (
     <img
-      className="absolute right-[32px] bottom-px w-md -rotate-6"
+      className="w-md -rotate-6"
       src="src/assets/images/profile-image.png"
       alt="Profile image of Arne Schüler"
     />
@@ -23,7 +23,7 @@ function ProfileImg() {
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col w-vw h-dvh ms-30 p-40 text-slate-950 gap-12">
+    <section className="flex flex-col w-vw h-dvh ms-30 p-40 text-slate-950 gap-12 snap-center">
       <div className="flex flex-col gap-4">
         <h1 className="text-7xl font-semibold">{hero.titleline1}</h1>
         <h1 className="text-7xl font-semibold">{hero.titleline2}</h1>
@@ -32,8 +32,10 @@ export default function HeroSection() {
           {hero.buttonLabel}
         </Button>{" "}
       </div>
-      <TechStack />
-      <ProfileImg />
+      <div className="flex items-center justify-between">
+        <TechStack />
+        <ProfileImg />
+      </div>
     </section>
   );
 }
