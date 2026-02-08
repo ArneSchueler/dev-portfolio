@@ -4,7 +4,7 @@ import { projects } from "../../content/projects/projects-en.js";
 
 export default function ProjectsSection() {
   return (
-    <section className="flex flex-col w-full h-dvh text-slate-950 gap-12">
+    <section className="flex flex-col box-border w-vw h-dvh ms-30 p-40 text-slate-950 gap-12">
       <div className="flex flex-col gap-4">
         <h1 className="text-7xl font-semibold">{projectsOverview.title}</h1>
       </div>

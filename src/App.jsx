@@ -8,7 +8,7 @@ function App() {
       <header>
         <Sidebar />
       </header>
-      <main className="flex flex-col w-vw  ms-30 p-40">
+      <main className="flex flex-col w-vw">
         <Home />
       </main>
     </>

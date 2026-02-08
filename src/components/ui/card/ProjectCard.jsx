@@ -7,18 +7,16 @@ export default function ProjectCard({
   title,
   description,
   btnLabel,
-  icon1,
-  icon2,
   ariaLabel,
   variant = "primary",
 }) {
   return (
-    <div>
-      <div>
+    <div className="flex flex-col p-6 gap-8">
+      <div className="flex flex-col gap-6">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between border-b-1 pb-6">
         <Button>View projects →</Button>
         <div>
           <Button variant="primary">
