@@ -3,8 +3,12 @@ const buttonStyle = "size-fit rounded-full text-lg font-bold border p-6";
 const base = "";
 
 const variants = {
+  // Button with fill
   primary: `${base}`,
+  // Button with outline
   secondary: `${base}`,
+  // Button as text
+  tertiary: "text-cyan-500",
 };
 
 export default function Button({
