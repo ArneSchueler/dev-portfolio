@@ -59,7 +59,7 @@ function Sidebar() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden sm:flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
+      <aside className="hidden bg-white sm:flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
         <Logo />
         <div className="flex flex-col gap-8">
           <IconButton
