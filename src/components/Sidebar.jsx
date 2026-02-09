@@ -1,4 +1,4 @@
-import IconButton from "./ui/Buttons/IconButton";
+import IconButton from "./ui/buttons/IconButton";
 import LanguageButton from "./ui/Buttons/languageButton";
 
 const homeIcon = (
