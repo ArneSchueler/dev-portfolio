@@ -1,5 +1,5 @@
 import IconButton from "./ui/buttons/IconButton";
-import LanguageButton from "./ui/Buttons/languageButton";
+import LanguageButton from "./ui/buttons/LanguageButton";
 
 const homeIcon = (
   <svg
