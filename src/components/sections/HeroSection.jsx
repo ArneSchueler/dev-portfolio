@@ -1,6 +1,8 @@
 import Button from "../ui/buttons/Button.jsx";
 import { hero } from "../../content/hero/hero-en.js";
 
+import profileImg from "../../assets/images/profile-image.png";
+
 function TechStack() {
   return (
     <div className="flex w-fit border-y py-6">
@@ -15,7 +17,7 @@ function ProfileImg() {
   return (
     <img
       className="w-md -rotate-6"
-      src="../../assets/images/profile-image.png"
+      src={profileImg}
       alt="Profile image of Arne Schüler"
     />
   );
