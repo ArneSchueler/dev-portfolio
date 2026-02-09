@@ -15,7 +15,7 @@ function ProfileImg() {
   return (
     <img
       className="w-md -rotate-6"
-      src="src/assets/images/profile-image.png"
+      src="../../assets/images/profile-image.png"
       alt="Profile image of Arne Schüler"
     />
   );
