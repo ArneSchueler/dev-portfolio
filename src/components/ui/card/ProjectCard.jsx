@@ -1,4 +1,4 @@
-import Button from "../Buttons/Button";
+import Button from "../buttons/Button";
 
 export default function ProjectCard({
   icon1: Icon1,
