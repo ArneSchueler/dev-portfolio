@@ -1,4 +1,4 @@
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebar.jsx";
 import HeroSection from "./components/sections/HeroSection";
 import ProjectsSection from "./components/sections/ProjectsSection";
 
