@@ -8,7 +8,9 @@ function App() {
       <header>
         <Sidebar />
       </header>
-      <main className="h-dvh overflow-y-scroll snap-y snap-mandatory">
+      <main className="h-dvh overflow-y-scroll md:snap-y md:snap-mandatory">
+        <HeroSection />
+        <ProjectsSection />
         <HeroSection />
         <ProjectsSection />
       </main>

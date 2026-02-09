@@ -16,7 +16,7 @@ function TechStack() {
 function ProfileImg() {
   return (
     <img
-      className="w-md -rotate-6"
+      className="hidden md:block w-md -rotate-6"
       src={profileImg}
       alt="Profile image of Arne Schüler"
     />
@@ -25,7 +25,7 @@ function ProfileImg() {
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col w-vw h-dvh ms-30 p-40 text-slate-950 gap-12 snap-start">
+    <section className="flex flex-col justify-center w-vw h-dvh lg:ms-30 p-6 lg:p-40 text-slate-950 gap-12 snap-start">
       <div className="flex flex-col gap-4">
         <h1 className="text-7xl font-semibold">{hero.titleline1}</h1>
         <h1 className="text-7xl font-semibold">{hero.titleline2}</h1>

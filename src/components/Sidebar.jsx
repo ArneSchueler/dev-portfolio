@@ -50,26 +50,51 @@ const contactIcon = (
 );
 
 function Logo() {
-  return <p className="font-tech writing-vertical rotate-180">schueler.dev</p>;
+  return (
+    <p className="font-tech md:writing-vertical md:rotate-180">schueler.dev</p>
+  );
 }
 
 function Sidebar() {
   return (
-    <aside className="flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
-      <Logo />
-      <div className="flex flex-col gap-8">
-        <IconButton
-          className="text-cyan-500 border-b-2"
-          name="homeIcon"
-          icon={homeIcon}
-        />
-        <IconButton name="projectIcon" icon={projectIcon} />
-        <IconButton name="aboutIcon" icon={aboutIcon} />
-        <IconButton name="contactIcon" icon={contactIcon} />
-      </div>
+    <>
+      {/* Desktop Sidebar */}
+      <aside className="hidden sm:flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
+        <Logo />
+        <div className="flex flex-col gap-8">
+          <IconButton
+            className="text-cyan-500 border-b-2"
+            name="homeIcon"
+            icon={homeIcon}
+          />
+          <IconButton name="projectIcon" icon={projectIcon} />
+          <IconButton name="aboutIcon" icon={aboutIcon} />
+          <IconButton name="contactIcon" icon={contactIcon} />
+        </div>
 
-      <LanguageButton />
-    </aside>
+        <LanguageButton />
+      </aside>
+
+      {/* Mobile Sidebar Header */}
+      <aside className="flex justify-between sm:hidden fixed w-full bg-white items-center p-6 shadow-xl z-10">
+        <Logo />
+        <LanguageButton />
+      </aside>
+
+      {/* Mobile Sidebar Navigation */}
+      <aside className="flex justify-center sm:hidden fixed bottom-0 bg-white w-full p-6 shadow-xl z-10">
+        <div className="flex gap-8">
+          <IconButton
+            className="text-cyan-500 border-b-2"
+            name="homeIcon"
+            icon={homeIcon}
+          />
+          <IconButton name="projectIcon" icon={projectIcon} />
+          <IconButton name="aboutIcon" icon={aboutIcon} />
+          <IconButton name="contactIcon" icon={contactIcon} />
+        </div>
+      </aside>
+    </>
   );
 }
 

@@ -4,11 +4,11 @@ import { projects } from "../../content/projects/projects-en.js";
 
 export default function ProjectsSection() {
   return (
-    <section className="flex flex-col  box-border w-vw h-dvh ms-30 p-40 text-slate-950 gap-12 snap-start">
+    <section className="flex flex-col  box-border w-vw md:h-dvh p-6 lg:ms-30 lg:p-40 text-slate-950 gap-12 snap-start">
       <div className="flex flex-col gap-4">
         <h1 className="text-7xl font-semibold">{projectsOverview.title}</h1>
       </div>
-      <div className="flex gap-8">
+      <div className="flex flex-col ld:flex-row gap-8">
         <ProjectCard
           title={projects.converto.title}
           description={projects.converto.description}
