@@ -1,9 +1,9 @@
-import Button from "../ui/Buttons/Button.jsx";
+import Button from "../ui/buttons/Button.jsx";
 import { hero } from "../../content/hero/hero-en.js";
 
 function TechStack() {
   return (
-    <div className="flex w-fit border-y py-6 snap-center">
+    <div className="flex w-fit border-y py-6">
       <span className="text-slate-600 tracking-[8px] font-tech">
         HTML · CSS · JavaScript · React · Accessibility
       </span>
@@ -23,7 +23,7 @@ function ProfileImg() {
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col w-vw h-dvh ms-30 p-40 text-slate-950 gap-12 snap-center">
+    <section className="flex flex-col w-vw h-dvh ms-30 p-40 text-slate-950 gap-12 snap-start">
       <div className="flex flex-col gap-4">
         <h1 className="text-7xl font-semibold">{hero.titleline1}</h1>
         <h1 className="text-7xl font-semibold">{hero.titleline2}</h1>
