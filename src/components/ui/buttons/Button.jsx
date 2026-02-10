@@ -16,12 +16,15 @@ export default function Button({
   children,
   ariaLabel,
   variant = "primary",
+  link,
 }) {
   const className = variants[variant];
 
   return (
     <button className={className} aria-label={ariaLabel} onClick={onClick}>
-      {children}
+      <a href={link} target="_blank">
+        {children}
+      </a>
     </button>
   );
 }
