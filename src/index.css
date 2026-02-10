@@ -19,6 +19,13 @@
   writing-mode: --value(--writing-*);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100dvh;
 }
