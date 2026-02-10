@@ -39,6 +39,7 @@ const NAV_ITEMS = [
 
 const PROJECT_ITEMS = [
   {
+    categorie: "selected",
     title: "schueler.dev · Portfolio",
     description:
       "Personal portfolio built with a design-system and accessibility focus.",
@@ -49,6 +50,8 @@ const PROJECT_ITEMS = [
     redirect: "https://www.schueler.dev/",
   },
   {
+    categorie: "selected",
+
     title: "Convert-O · Modular Web App",
     description:
       "Modular conversion web app with a focus on structure and usability.",
@@ -57,6 +60,8 @@ const PROJECT_ITEMS = [
     RedirectIcon: openWindowIcon,
   },
   {
+    categorie: "selected",
+
     title: "workout · Modular Web App",
     description:
       "Modular conversion web app with a focus on structure and usability.",
