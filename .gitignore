@@ -61,3 +61,10 @@ Thumbs.db
 # Testing
 # ======================
 coverage/
+
+
+
+# ======================
+# Screenshots
+# ======================
+screenshots/
