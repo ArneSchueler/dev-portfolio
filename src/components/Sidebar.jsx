@@ -1,4 +1,4 @@
-import IconButton from "./ui/buttons/IconButton";
+import { useState } from "react";
 import LanguageButton from "./ui/buttons/LanguageButton";
 
 const homeIcon = (
@@ -49,27 +49,49 @@ const contactIcon = (
   </svg>
 );
 
+const activeItem = "pb-1 text-cyan-500 border-b-2";
+const itemBase =
+  "text-neutral-600 pb-1  border-b-2 border-transparent hover:text-cyan-500 ";
+
 function Logo() {
   return (
-    <p className="font-tech md:writing-vertical md:rotate-180">schueler.dev</p>
+    <a href="/#hero" className="font-tech md:writing-vertical md:rotate-180">
+      schueler.dev
+    </a>
   );
 }
 
+const NAV_ITEMS = [
+  { id: "home", href: "#hero", label: "Home", Icon: homeIcon },
+  { id: "projects", href: "#projects", label: "Projects", Icon: projectIcon },
+  { id: "about", href: "#about", label: "About", Icon: aboutIcon },
+  { id: "contact", href: "#contact", label: "Contact", Icon: contactIcon },
+];
+
 function Sidebar() {
+  const [activeId, setActiveId] = useState("home");
+
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden bg-white sm:flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
+      <aside className="hidden bg-white box-border sm:flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
         <Logo />
         <div className="flex flex-col gap-8">
-          <IconButton
-            className="text-cyan-500 border-b-2"
-            name="homeIcon"
-            icon={homeIcon}
-          />
-          <IconButton name="projectIcon" icon={projectIcon} />
-          <IconButton name="aboutIcon" icon={aboutIcon} />
-          <IconButton name="contactIcon" icon={contactIcon} />
+          {NAV_ITEMS.map(({ id, href, label, Icon }) => {
+            const isActive = activeId === id;
+
+            return (
+              <a
+                href={href}
+                key={id}
+                aria-label={label}
+                className={isActive ? activeItem : itemBase}
+                onClick={() => setActiveId(id)}
+              >
+                {Icon}
+              </a>
+            );
+          })}
         </div>
 
         <LanguageButton />
@@ -84,14 +106,21 @@ function Sidebar() {
       {/* Mobile Sidebar Navigation */}
       <aside className="flex justify-center sm:hidden fixed bottom-0 bg-white w-full p-6 shadow-xl z-10">
         <div className="flex gap-8">
-          <IconButton
-            className="text-cyan-500 border-b-2"
-            name="homeIcon"
-            icon={homeIcon}
-          />
-          <IconButton name="projectIcon" icon={projectIcon} />
-          <IconButton name="aboutIcon" icon={aboutIcon} />
-          <IconButton name="contactIcon" icon={contactIcon} />
+          {NAV_ITEMS.map(({ id, href, label, Icon }) => {
+            const isActive = activeId === id;
+
+            return (
+              <a
+                href={href}
+                key={id}
+                aria-label={label}
+                className={isActive ? activeItem : itemBase}
+                onClick={() => setActiveId(id)}
+              >
+                {Icon}
+              </a>
+            );
+          })}
         </div>
       </aside>
     </>
