@@ -9,7 +9,7 @@ const heroButtonLabel = "View projects →";
 
 export default function Home() {
   return (
-    <main className=" flex flex-col h-dvh sm:h-vh overflow-y-scroll md:snap-y md:snap-mandatory">
+    <main className=" flex flex-col h-screen overflow-y-scroll md:snap-y md:snap-mandatory">
       <HeroSection header={heroHeader} subhead={heroSubheader} />
       <ProjectsSection></ProjectsSection>
       <AboutSection></AboutSection>

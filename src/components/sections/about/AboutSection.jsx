@@ -106,9 +106,9 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="items-center justify-items-center w-vw h-dvh sm:h-vh lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
+      className="items-center justify-items-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
     >
-      <div className="grid grid-cols-3 gap-x-20 gap-y-8 h-full max-w-400">
+      <div className="grid grid-cols-3 gap-x-20 gap-y-8 items-start max-w-400">
         <h1 className=" items-center text-7xl font-semibold">About</h1>
         <TabNavigation
           items={NAV_ITEMS}
@@ -120,7 +120,7 @@ export default function AboutSection() {
           <h3>{content.title}</h3>
           <em>{content.quote}</em>
         </div>
-        <div className="col-2 ">{renderContentType(content)}</div>
+        <div className="col-2 items-start ">{renderContentType(content)}</div>
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="flex flex-col box-border items-center justify-items-center w-vw h-dvh lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
+      className="flex flex-col box-border items-center justify-items-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
     >
       <div className=" box-border h-full max-w-400">
         <div className="flex flex-col gap-4">
