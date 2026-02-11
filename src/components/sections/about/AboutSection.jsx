@@ -101,7 +101,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="flex flex-col box-border items-center justify-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
+      className="flex flex-col box-border items-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
     >
       <div className="grid grid-cols-3 gap-x-20 gap-y-8 items-start justify-center max-w-400">
         <h1 className=" items-center text-7xl font-semibold">About</h1>

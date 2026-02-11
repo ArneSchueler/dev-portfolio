@@ -1,6 +1,6 @@
 import { projectsOverview } from "../../data/projects/projectsOverview-en.js";
 import ProjectCard from "../ui/card/ProjectCard.jsx";
-import { projects } from "../../data/projects/projects-en.js";
+// import { projects } from "../../data/projects/projects-en.js";
 import TabNavigation from "../ui/tabs/TabNavigation.jsx";
 
 import { useState } from "react";
@@ -39,6 +39,7 @@ const NAV_ITEMS = [
 
 const PROJECT_ITEMS = [
   {
+    id: 1,
     categorie: "selected",
     title: "schueler.dev · Portfolio",
     description:
@@ -50,6 +51,7 @@ const PROJECT_ITEMS = [
     redirect: "https://www.schueler.dev/",
   },
   {
+    id: 2,
     categorie: "selected",
 
     title: "Convert-O · Modular Web App",
@@ -60,6 +62,7 @@ const PROJECT_ITEMS = [
     RedirectIcon: openWindowIcon,
   },
   {
+    id: 3,
     categorie: "selected",
 
     title: "workout · Modular Web App",
@@ -77,10 +80,10 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="flex flex-col box-border items-center justify-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
+      className="flex flex-col box-border items-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
     >
       <div className="grid grid-cols-3 box-border gap-x-20 gap-y-10 items-center justify-center max-w-400">
-        <h1 className="text-7xl font-semibold">{projectsOverview.title}</h1>
+        <h1 className="text-7xl font-semibold">Projects</h1>
         <TabNavigation
           items={NAV_ITEMS}
           currentTab={currentTab}
