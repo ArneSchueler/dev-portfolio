@@ -1,5 +1,5 @@
-import { useState } from "react";
 import LanguageButton from "./ui/buttons/LanguageButton";
+import { scrollToSection } from "../utils/helpers";
 
 const homeIcon = (
   <svg
@@ -62,34 +62,31 @@ function Logo() {
 }
 
 const NAV_ITEMS = [
-  { id: "home", href: "#hero", label: "Home", Icon: homeIcon },
-  { id: "projects", href: "#projects", label: "Projects", Icon: projectIcon },
-  { id: "about", href: "#about", label: "About", Icon: aboutIcon },
-  { id: "contact", href: "#contact", label: "Contact", Icon: contactIcon },
+  { id: "hero", label: "Hero", Icon: homeIcon },
+  { id: "projects", label: "Projects", Icon: projectIcon },
+  { id: "about", label: "About", Icon: aboutIcon },
+  { id: "contact", label: "Contact", Icon: contactIcon },
 ];
 
-function Sidebar() {
-  const [activeId, setActiveId] = useState("home");
-
+function Sidebar({ activeSection }) {
   return (
     <>
       {/* Desktop Sidebar */}
       <aside className="hidden bg-white box-border sm:flex flex-col fixed h-full justify-between items-center px-6 pt-20 pb-8 shadow-xl">
         <Logo />
         <div className="flex flex-col gap-8">
-          {NAV_ITEMS.map(({ id, href, label, Icon }) => {
-            const isActive = activeId === id;
+          {NAV_ITEMS.map(({ id, label, Icon }) => {
+            const isActive = activeSection === id;
 
             return (
-              <a
-                href={href}
+              <button
                 key={id}
                 aria-label={label}
                 className={isActive ? activeItem : itemBase}
-                onClick={() => setActiveId(id)}
+                onClick={() => scrollToSection(id)}
               >
                 {Icon}
-              </a>
+              </button>
             );
           })}
         </div>
@@ -107,7 +104,7 @@ function Sidebar() {
       <aside className="flex justify-center sm:hidden fixed bottom-0 bg-white w-full p-6 shadow-xl z-10">
         <div className="flex gap-8">
           {NAV_ITEMS.map(({ id, href, label, Icon }) => {
-            const isActive = activeId === id;
+            const isActive = activeSection === id;
 
             return (
               <a

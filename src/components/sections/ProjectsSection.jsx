@@ -78,19 +78,14 @@ export default function ProjectsSection() {
   const [currentTab, setCurrentTab] = useState("selected");
 
   return (
-    <section
-      id="projects"
-      className="flex flex-col box-border items-center min-h-screen lg:ms-30 p-6 sm:p-40 text-slate-950 snap-start"
-    >
-      <div className="grid grid-cols-3 box-border gap-x-20 gap-y-10 items-center justify-center max-w-400">
-        <h1 className="text-7xl font-semibold">Projects</h1>
-        <TabNavigation
-          items={NAV_ITEMS}
-          currentTab={currentTab}
-          onTabChange={setCurrentTab}
-        />
-        <ProjectCard items={PROJECT_ITEMS} />
-      </div>
-    </section>
+    <div className="grid grid-cols-3 box-border gap-x-20 gap-y-10 items-center justify-center max-w-400">
+      <h1 className="text-7xl font-semibold">Projects</h1>
+      <TabNavigation
+        items={NAV_ITEMS}
+        currentTab={currentTab}
+        onTabChange={setCurrentTab}
+      />
+      <ProjectCard items={PROJECT_ITEMS} />
+    </div>
   );
 }

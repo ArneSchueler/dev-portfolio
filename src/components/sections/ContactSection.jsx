@@ -1,12 +1,5 @@
 import { useState } from "react";
-import TabNavigation from "../../ui/tabs/TabNavigation";
 
-const NAV_ITEMS = [
-  { id: "about", label: "About" },
-  { id: "approach", label: "Approach" },
-  { id: "background", label: "Background" },
-  { id: "beyond", label: "Beyond" },
-];
 const TAB_CONTENT = [
   {
     id: "about",
@@ -94,18 +87,13 @@ const TAB_CONTENT = [
   },
 ];
 
-export default function AboutSection() {
+export default function ContactSection() {
   const [currentTab, setCurrentTab] = useState("about");
   const content = TAB_CONTENT.find((content) => content.id === currentTab);
 
   return (
     <div className="grid grid-cols-3 gap-x-20 gap-y-8 items-start justify-center max-w-400">
-      <h1 className=" items-center text-7xl font-semibold">About</h1>
-      <TabNavigation
-        items={NAV_ITEMS}
-        currentTab={currentTab}
-        onTabChange={setCurrentTab}
-      />
+      <h1 className=" items-center text-7xl font-semibold">Contact</h1>
 
       <div className="col-1">
         <h3>{content.title}</h3>
