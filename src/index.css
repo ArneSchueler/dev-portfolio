@@ -1,34 +1,169 @@
 @import "tailwindcss";
+
 @theme {
-  /* font */
+  /* fonts */
   --font-tech: "JetBrains Mono", monospace;
   --font-general: "Inter", sans-serif;
 
-  /* color */
-  --muted-grey: #7f7f7f;
+  /* colors (semantic) */
+  --color-text: #666a72;
+  --color-muted: #7f7f7f;
 
-  --button-primary-padding: 24px;
+  /* spacing / component tokens */
+  --space-button-primary-x: 24px;
+  --space-button-primary-y: 12px;
+
+  /* writing modes */
   --writing-normal: horizontal-tb;
   --writing-vertical: vertical-lr;
   --writing-vertical-reverse: vertical-rl;
   --writing-sideways: sideways-lr;
   --writing-sideways-reverse: sideways-rl;
+
+  /* --------------------------------
+     Typography (fluid clamp tokens)
+     -------------------------------- */
+
+  /* Body */
+  --text-body-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.95rem); /* ~14–15.2 */
+  --text-body: clamp(1rem, 0.96rem + 0.2vw, 1.125rem); /* ~16–18 */
+  --text-body-lg: clamp(1.125rem, 1.06rem + 0.35vw, 1.25rem); /* ~18–20 */
+
+  /* Headings */
+  --text-heading-sm: clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem); /* ~20–24 */
+  --text-heading: clamp(1.5rem, 1.28rem + 0.95vw, 2rem); /* ~24–32 */
+  --text-heading-lg: clamp(2rem, 1.55rem + 1.9vw, 3rem); /* ~32–48 */
+  --text-display: clamp(2.75rem, 2.1rem + 2.9vw, 4rem); /* ~44–64 */
+
+  /* Line heights */
+  --leading-body: 1.65;
+  --leading-heading: 1.2;
+  --leading-display: 1.05;
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;
+  --tracking-label: 0.08em;
+
+  /* Reading width */
+  --measure: 65ch;
 }
 
-@utility writing-* {
-  writing-mode: --value(--writing-*);
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-general);
+    color: var(--color-text);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+
+  h1 {
+    font-size: var(--text-display);
+    line-height: var(--leading-display);
+    letter-spacing: var(--tracking-tight);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: var(--text-heading);
+    line-height: var(--leading-heading);
+    letter-spacing: var(--tracking-tight);
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+    font-weight: 600;
+  }
+
+  /* p {
+    max-width: var(--measure);
+  } */
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer utilities {
+  /* colors */
+  .text-muted {
+    color: var(--color-muted);
+  }
 
-html {
-  scroll-behavior: smooth;
-}
-body {
-  height: 100dvh;
-}
-.root {
-  height: 100dvh;
+  /* fonts */
+  .font-tech {
+    font-family: var(--font-tech);
+  }
+  .font-general {
+    font-family: var(--font-general);
+  }
+
+  /* typography utilities (semantic) */
+  .text-body-sm {
+    font-size: var(--text-body-sm);
+    line-height: var(--leading-body);
+  }
+  .text-body {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+  .text-body-lg {
+    font-size: var(--text-body-lg);
+    line-height: var(--leading-body);
+  }
+
+  .text-heading-sm {
+    font-size: var(--text-heading-sm);
+    line-height: var(--leading-heading);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-heading {
+    font-size: var(--text-heading);
+    line-height: var(--leading-heading);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-heading-lg {
+    font-size: var(--text-heading-lg);
+    line-height: var(--leading-heading);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-display {
+    font-size: var(--text-display);
+    line-height: var(--leading-display);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  /* optional label style */
+  .text-label {
+    font-size: var(--text-body-sm);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+  }
+
+  /* writing-mode utilities */
+  .writing-normal {
+    writing-mode: var(--writing-normal);
+  }
+  .writing-vertical {
+    writing-mode: var(--writing-vertical);
+  }
+  .writing-vertical-reverse {
+    writing-mode: var(--writing-vertical-reverse);
+  }
+  .writing-sideways {
+    writing-mode: var(--writing-sideways);
+  }
+  .writing-sideways-reverse {
+    writing-mode: var(--writing-sideways-reverse);
+  }
 }
