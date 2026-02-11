@@ -5,6 +5,7 @@ export default function ProjectCard({ items }) {
     <div className="flex col-span-3 p-6 gap-14">
       {items.map(
         ({
+          id,
           title,
           description,
           btnLabel,
@@ -14,7 +15,10 @@ export default function ProjectCard({ items }) {
           redirect,
         }) => {
           return (
-            <article className="flex flex-col border-b-2 hover:border-b-cyan-500">
+            <article
+              key={id}
+              className="flex flex-col border-b-2 hover:border-b-cyan-500"
+            >
               <div className="flex flex-col gap-6">
                 <h3>{title}</h3>
                 <p>{description}</p>
