@@ -55,7 +55,7 @@ const itemBase =
 
 function Logo() {
   return (
-    <a href="/#hero" className="font-tech md:writing-vertical md:rotate-180">
+    <a href="/" className="font-tech md:writing-vertical md:rotate-180">
       schueler.dev
     </a>
   );
@@ -112,7 +112,7 @@ function Sidebar({ activeSection }) {
                 key={id}
                 aria-label={label}
                 className={isActive ? activeItem : itemBase}
-                onClick={() => setActiveId(id)}
+                onClick={() => scrollToSection(id)}
               >
                 {Icon}
               </a>
