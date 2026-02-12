@@ -91,19 +91,18 @@ function Sidebar({ activeSection }) {
       {/* Mobile Sidebar Navigation */}
       <aside className="flex justify-center sm:hidden fixed bottom-0 bg-white w-full p-6 z-10">
         <div className="flex w-full justify-between px-6">
-          {NAV_ITEMS.map(({ id, href, label, Icon }) => {
+          {NAV_ITEMS.map(({ id, label, Icon }) => {
             const isActive = activeSection === id;
 
             return (
-              <a
-                href={href}
+              <button
                 key={id}
                 aria-label={label}
                 className={isActive ? activeItem : itemBase}
                 onClick={() => scrollToSection(id)}
               >
                 {Icon}
-              </a>
+              </button>
             );
           })}
         </div>
