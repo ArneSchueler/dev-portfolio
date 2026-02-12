@@ -107,11 +107,11 @@ export function AboutSection() {
         onTabChange={setCurrentTab}
       />
 
-      <div className="flex flex-col col-1 gap-4">
+      <div className="flex flex-col gap-4">
         <h2>{content.title}</h2>
         <em>{content.quote}</em>
       </div>
-      <div className="col-1 lg:col-span-2 items-start ">
+      <div className="lg:col-span-2 items-start ">
         {renderContentType(content)}
       </div>
     </div>
