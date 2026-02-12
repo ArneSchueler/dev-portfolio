@@ -2,7 +2,7 @@ import Button from "../buttons/Button";
 
 export default function ProjectCardList({ items }) {
   return (
-    <div className="flex col-span-3 p-6 gap-14">
+    <div className="flex flex-col xl:flex-row col-span-3 gap-14">
       {items.map(
         ({
           id,
@@ -17,19 +17,21 @@ export default function ProjectCardList({ items }) {
           return (
             <article
               key={id}
-              className="flex flex-col border-b-2 hover:border-b-cyan-500"
+              className="flex flex-col gap-6 border-b-2 hover:border-b-cyan-500"
             >
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-4">
                 <h3>{title}</h3>
                 <p>{description}</p>
               </div>
-              <div className="flex justify-between  pb-6">
-                <Button variant="tertiary">{btnLabel}</Button>
+              <div className="flex justify-between   pb-6">
+                <Button variant="secondary">{btnLabel}</Button>
                 <div>
-                  <Button link={github} variant="primary">
+                  <Button link={github} variant="tertiary">
                     {GitIcon}
                   </Button>
-                  <Button link={redirect}>{RedirectIcon} </Button>
+                  <Button link={redirect} variant="tertiary">
+                    {RedirectIcon}{" "}
+                  </Button>
                 </div>
               </div>
             </article>
