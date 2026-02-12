@@ -105,28 +105,28 @@ export default function Home({ setActiveSection }) {
     >
       <section
         id="hero"
-        className=" flex flex-col box-border pt-40 items-center justify-items-center min-h-dvh sm:min-h-screen text-slate-950 snap-start"
+        className=" flex flex-col box-border py-20 items-center justify-items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <HeroSection header={heroHeader} subhead={heroSubheader} />
       </section>
 
       <section
         id="projects"
-        className="flex flex-col box-border pt-40 items-center min-h-dvh  sm:min-h-screen text-slate-950 snap-start"
+        className=" flex flex-col box-border py-20 items-center justify-items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <ProjectsSection></ProjectsSection>
       </section>
 
       <section
         id="about"
-        className="flex flex-col box-border pt-40 items-center min-h-dvh  sm:min-h-screen text-slate-950 snap-start"
+        className="flex flex-col box-border py-20  items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <AboutSection></AboutSection>
       </section>
 
       <section
         id="contact"
-        className="flex flex-col box-border pt-40 items-center min-h-dvh sm:min-h-screen text-slate-950 snap-start"
+        className="flex flex-col box-border py-20  items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <ContactSection></ContactSection>
       </section>
