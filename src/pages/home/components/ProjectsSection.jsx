@@ -1,7 +1,8 @@
-import { projectsOverview } from "../../data/projects/projectsOverview-en.js";
-import ProjectCard from "../ui/card/ProjectCard.jsx";
+import { projectsOverview } from "../../../data/projects/projectsOverview-en.js";
+import ProjectCardList from "../../../components/ui/card/ProjectCardList.jsx";
+import ProjectCard from "../../../components/ui/card/ProjectCardList.jsx";
 // import { projects } from "../../data/projects/projects-en.js";
-import TabNavigation from "../ui/tabs/TabNavigation.jsx";
+import TabNavigation from "../../../components/ui/tabs/TabNavigation.jsx";
 
 import { useState } from "react";
 
@@ -32,9 +33,9 @@ const openWindowIcon = (
 );
 
 const NAV_ITEMS = [
-  { id: "selected", label: "Selected Projects" },
-  { id: "dev", label: "Dev Projects" },
-  { id: "ux", label: "UX Projects" },
+  { id: "selected", label: "Selected" },
+  { id: "dev", label: "Dev" },
+  { id: "ux", label: "UX" },
 ];
 
 const PROJECT_ITEMS = [
@@ -74,18 +75,18 @@ const PROJECT_ITEMS = [
   },
 ];
 
-export default function ProjectsSection() {
+export function ProjectsSection() {
   const [currentTab, setCurrentTab] = useState("selected");
 
   return (
-    <div className="grid grid-cols-3 box-border gap-x-20 gap-y-10 items-center justify-center max-w-400">
-      <h1 className="text-7xl font-semibold">Projects</h1>
+    <div className="grid lg:grid-cols-3 gap-x-20 gap-y-8 items-start justify-center max-w-400">
+      <h1 className="text-display font-semibold">Projects</h1>
       <TabNavigation
         items={NAV_ITEMS}
         currentTab={currentTab}
         onTabChange={setCurrentTab}
       />
-      <ProjectCard items={PROJECT_ITEMS} />
+      <ProjectCardList items={PROJECT_ITEMS} />
     </div>
   );
 }

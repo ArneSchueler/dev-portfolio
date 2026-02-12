@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TabNavigation from "../../ui/tabs/TabNavigation";
+import TabNavigation from "../../../../components/ui/tabs/TabNavigation";
 
 const NAV_ITEMS = [
   { id: "about", label: "About" },
@@ -94,24 +94,26 @@ const TAB_CONTENT = [
   },
 ];
 
-export default function AboutSection() {
+export function AboutSection() {
   const [currentTab, setCurrentTab] = useState("about");
   const content = TAB_CONTENT.find((content) => content.id === currentTab);
 
   return (
-    <div className="grid grid-cols-3 gap-x-20 gap-y-8 items-start justify-center max-w-400">
-      <h1 className=" items-center text-7xl font-semibold">About</h1>
+    <div className="grid lg:grid-cols-3 gap-x-20 gap-y-8 items-start justify-center max-w-400">
+      <h1 className="text-display font-semibold">About</h1>
       <TabNavigation
         items={NAV_ITEMS}
         currentTab={currentTab}
         onTabChange={setCurrentTab}
       />
 
-      <div className="col-1">
-        <h3>{content.title}</h3>
+      <div className="flex flex-col col-1 gap-4">
+        <h2>{content.title}</h2>
         <em>{content.quote}</em>
       </div>
-      <div className="col-2 items-start ">{renderContentType(content)}</div>
+      <div className="col-1 lg:col-span-2 items-start ">
+        {renderContentType(content)}
+      </div>
     </div>
   );
 }
@@ -121,7 +123,9 @@ function renderContentType(content) {
 
   if (type === "text") {
     return (
-      <p className="ps-2 border-s-2  border-cyan-500">{content.content.text}</p>
+      <p className="ps-2 border-s-2 text-lg  border-cyan-500">
+        {content.content.text}
+      </p>
     );
   } else if (type === "items") {
     return (
