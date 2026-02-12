@@ -37,9 +37,9 @@ const contactIcon = (
   </svg>
 );
 
-const activeItem = " w-9 pb-1 text-cyan-500 border-b-2";
+const activeItem = " w-8 pb-1 text-cyan-500 border-b-2";
 const itemBase =
-  "w-9 text-neutral-600 pb-1  border-b-2 border-transparent hover:text-cyan-500 ";
+  "w-8 text-neutral-600 pb-1  border-b-2 border-transparent hover:text-cyan-500 ";
 
 function Logo() {
   return (
