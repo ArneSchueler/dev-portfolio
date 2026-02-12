@@ -1,7 +1,5 @@
 import Sidebar from "./components/Sidebar.jsx";
-import HeroSection from "./components/sections/HeroSection";
-import ProjectsSection from "./components/sections/ProjectsSection";
-import Home from "./components/pages/Home.jsx";
+import Home from "./pages/home/Home.jsx";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
@@ -22,12 +20,7 @@ function App() {
         <Route
           path="/:section"
           element={<Home setActiveSection={setActiveSection} />}
-        />
-
-        {/* <Route path="/#projects" element={<Home />}></Route>
-        <Route path="/#about" element={<Home />}></Route>
-        <Route path="/about" element={<HeroSection />}></Route>
-        <Route path="/*" element={<HeroSection />}></Route> */}
+        />{" "}
       </Routes>
     </>
   );
