@@ -1,6 +1,7 @@
-const activeItem = "pb-1 text-cyan-500 border-b-2";
+const activeItem =
+  "pb-1 text-slate-900 text-xl font-semibold border-b-2 border-cyan-500";
 const itemBase =
-  "text-neutral-600 pb-1  border-b-2 border-transparent hover:text-cyan-500 ";
+  "text-body text-muted pb-1  border-b-2 border-transparent hover:text-cyan-500 ";
 
 export default function TabNavigation({ items, currentTab, onTabChange }) {
   return (
