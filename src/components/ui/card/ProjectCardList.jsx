@@ -17,7 +17,7 @@ export default function ProjectCardList({ items }) {
           return (
             <article
               key={id}
-              className="flex flex-col gap-6 border-b-2 p-4 hover:bg-slate-200/10 hover:rounded-2xl hover:scale-102 hover:border-b-cyan-500"
+              className="flex flex-col gap-6 border-b-2 p-4 hover:bg-slate-200/10 hover:rounded-t-2xl hover:scale-102 hover:border-b-cyan-500"
             >
               <div className="flex flex-col gap-4">
                 <h3>{title}</h3>
