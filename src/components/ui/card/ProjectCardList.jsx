@@ -1,6 +1,5 @@
 import Button from "../buttons/Button";
 import { projectDetailsBtn, githubBtn, redirectBtn } from "../buttons/Button";
-import { Icon } from "@iconify/react";
 
 export default function ProjectCardList({ items }) {
   return (
@@ -16,7 +15,7 @@ export default function ProjectCardList({ items }) {
               <p>{description}</p>
             </div>
             <div className="flex justify-between   pb-6">
-              <Button {...projectDetailsBtn} />
+              <Button {...projectDetailsBtn} route={`/project/${id}`} />
               <div>
                 <Button {...githubBtn} />
                 <Button {...redirectBtn} />

@@ -1,7 +1,8 @@
 import LanguageButton from "./ui/buttons/LanguageButton";
-import { scrollToSection } from "../utils/helpers";
+import { handleSectionNavigation } from "../utils/helpers";
 import { NAV_ITEMS } from "../data/nav.config";
 import { Icon } from "@iconify/react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const activeItem = " w-8 pb-1 text-cyan-500 border-b-2";
 const itemBase =
@@ -16,6 +17,8 @@ function Logo() {
 }
 
 function Sidebar({ activeSection }) {
+  const location = useLocation();
+  const navigate = useNavigate();
   return (
     <>
       {/* Desktop Sidebar */}
@@ -30,7 +33,9 @@ function Sidebar({ activeSection }) {
                 key={id}
                 aria-label={label}
                 className={isActive ? activeItem : itemBase}
-                onClick={() => scrollToSection(id)}
+                onClick={() =>
+                  handleSectionNavigation({ id, location, navigate })
+                }
               >
                 <Icon icon={icon} className="w-8 h-8" />
               </button>
