@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TabNavigation from "../../../../components/ui/tabs/TabNavigation";
+import TabNavigation from "../../../components/ui/tabs/TabNavigation";
 
 const NAV_ITEMS = [
   { id: "about", label: "About" },
