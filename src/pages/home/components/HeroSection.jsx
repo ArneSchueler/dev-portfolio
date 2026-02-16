@@ -1,14 +1,14 @@
-import { hero } from "../../../data/hero/hero-en.js";
+import { ctaBtn } from "../../../components/ui/buttons/Button.jsx";
 
 import profileImg from "../../../assets/images/profile-image.png";
-import Button from "../../../components/ui/buttons/Button.jsx";
-import { scrollToSection } from "../../../utils/helpers.js";
+import Buttons from "../../../components/ui/buttons/Button.jsx";
+import { HERO } from "../../../data/en/site.js";
 
 function TechStack() {
   return (
-    <div className="flex w-fit lg:mr-40 border-y py-6">
-      <span className="text-body tracking-label color-muted font-tech">
-        HTML · CSS · JavaScript · React · Accessibility
+    <div className="col-span-3 row-start-4 flex w-fit border-y py-6 lg:mr-40">
+      <span className="text-body color-muted font-tech tracking-wide">
+        {HERO.techStack}
       </span>
     </div>
   );
@@ -16,9 +16,9 @@ function TechStack() {
 
 function ProfileImg() {
   return (
-    <div className="overflow-visible flex">
+    <div className="col-end-5 row-start-3 row-end-5 translate-y-1/4">
       <img
-        className="hidden w-80 lg:flex -rotate-6"
+        className="hidden w-120 -rotate-6 lg:block"
         src={profileImg}
         alt="Profile image of Arne Schüler"
       />
@@ -28,25 +28,15 @@ function ProfileImg() {
 
 export function HeroSection() {
   return (
-    <div className="flex flex-col box-border gap-24 h-full max-w-400">
-      <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <h1>{hero.titleline1}</h1>
-          <h1>{hero.titleline2}</h1>
-          <p>{hero.subhead}</p>
-        </div>
-        <Button
-          onClick={() => scrollToSection("projects")}
-          aria-label={hero.button.ariaLabel}
-          variant="primary"
-        >
-          View projects →
-        </Button>
+    <div className="sm:auto-rows-4 grid h-full max-h-screen max-w-400 items-start justify-center gap-y-8 sm:gap-y-0 lg:grid-cols-4">
+      <div className="col-span-4 flex flex-col gap-13">
+        <h1>{HERO.header}</h1>
+        <p className="max-w-145 text-xl">{HERO.subheader}</p>
+
+        <Buttons {...ctaBtn} route="/projects"></Buttons>
       </div>
-      <div className="flex items-center justify-between">
-        <TechStack />
-        <ProfileImg />
-      </div>
+      <TechStack />
+      <ProfileImg />
     </div>
   );
 }

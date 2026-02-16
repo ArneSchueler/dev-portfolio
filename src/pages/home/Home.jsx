@@ -10,11 +10,6 @@ import {
 
 import { scrollToSection } from "../../utils/helpers.js";
 
-const heroHeader = "Frontend Developer with UX focus";
-const heroSubheader =
-  "I build accessible, structured web interfaces where design decisions and code belong together.";
-const heroButtonLabel = "View projects →";
-
 // points to dom element
 
 const sectionIds = ["hero", "projects", "about", "contact"];
@@ -105,28 +100,28 @@ export default function Home({ setActiveSection }) {
     >
       <section
         id="hero"
-        className=" flex flex-col box-border py-20 items-center sm:min-h-screen text-slate-950 snap-start"
+        className=" flex flex-col box-border py-40 items-center sm:min-h-screen text-slate-950 snap-start"
       >
-        <HeroSection header={heroHeader} subhead={heroSubheader} />
+        <HeroSection />
       </section>
 
       <section
         id="projects"
-        className=" flex flex-col box-border py-20 items-center sm:min-h-screen text-slate-950 snap-start"
+        className=" flex flex-col box-border py-40 items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <ProjectsSection></ProjectsSection>
       </section>
 
       <section
         id="about"
-        className="flex flex-col box-border py-20  items-center sm:min-h-screen text-slate-950 snap-start"
+        className="flex flex-col box-border py-40  items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <AboutSection></AboutSection>
       </section>
 
       <section
         id="contact"
-        className="flex flex-col box-border py-20  items-center sm:min-h-screen text-slate-950 snap-start"
+        className="flex flex-col box-border py-40 items-center sm:min-h-screen text-slate-950 snap-start"
       >
         <ContactSection></ContactSection>
       </section>
