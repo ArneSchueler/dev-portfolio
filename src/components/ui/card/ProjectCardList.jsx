@@ -3,7 +3,7 @@ import { projectDetailsBtn, githubBtn, redirectBtn } from "../buttons/Button";
 
 export default function ProjectCardList({ items }) {
   return (
-    <div className="flex flex-col gap-14 lg:col-span-3 xl:flex-row">
+    <div className="grid flex-col gap-14 lg:col-span-3 xl:grid-cols-3">
       {items.map(({ slug, overview }) => {
         const { title, description, links = [] } = overview;
 
