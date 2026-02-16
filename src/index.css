@@ -43,6 +43,7 @@
   /* Letter spacing */
   --tracking-tight: -0.02em;
   --tracking-label: 0.08em;
+  --tracking-wide: 0.4em;
 
   /* Reading width */
   --measure: 65ch;
@@ -100,6 +101,7 @@ main {
     radial-gradient(
       2600px 1400px at -10% -20%,
       rgba(255, 255, 255, 1) 53%,
+
       rgba(210, 228, 255, 0.1) 55%
     ),
     #f7faff;
@@ -113,8 +115,7 @@ main {
   /* oben links – Lichtquelle */
       radial-gradient(
         1300px 700px at -30% 0%,
-        rgba(255, 255, 255, 1) 53%,
-        rgba(210, 228, 255, 0.1) 55%
+        /* rgba(255, 255, 255, 1) 53%, */ rgba(210, 228, 255, 0.1) 55%
       ),
       #f7faff;
 
@@ -124,6 +125,16 @@ main {
 
 aside {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background:
+  /* oben links – Lichtquelle */
+    radial-gradient(
+      800px 150px at 0% -30%,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(210, 228, 255, 0.1) 55%
+    ),
+    #f7faff;
+
+  background-blend-mode: normal, normal, normal, soft-light;
 }
 
 @layer utilities {
@@ -186,9 +197,6 @@ aside {
   .writing-normal {
     writing-mode: var(--writing-normal);
   }
-  .writing-vertical {
-    writing-mode: var(--writing-vertical);
-  }
   .writing-vertical-reverse {
     writing-mode: var(--writing-vertical-reverse);
   }
@@ -198,4 +206,8 @@ aside {
   .writing-sideways-reverse {
     writing-mode: var(--writing-sideways-reverse);
   }
+}
+
+@utility writing-vertical {
+  writing-mode: var(--writing-vertical);
 }
