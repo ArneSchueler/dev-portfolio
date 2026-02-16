@@ -44,7 +44,7 @@ export const PROJECTS = [
 
     detail: {
       hero: {
-        title: "schueler.dev – Portfolio",
+        title: "schueler.dev",
         subtitle:
           "A minimal portfolio that treats UX decisions and code structure as one system.",
         image: devPortfolioHero,
