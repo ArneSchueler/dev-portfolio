@@ -1,5 +1,3 @@
-import { hero } from "../data/hero/hero-en";
-
 // function to scroll to section
 export function scrollToSection(id) {
   // optional chaining to evade null response
