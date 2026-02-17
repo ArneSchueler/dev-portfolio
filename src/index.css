@@ -113,10 +113,9 @@ main {
   main {
     background:
   /* oben links – Lichtquelle */
-      rradial-gradient(
-        2600px 1400px at -10% -20%,
+      radial-gradient(
+        1300px 700px at -30% 0%,
         rgba(255, 255, 255, 1) 53%,
-
         rgba(210, 228, 255, 0.1) 55%
       ),
       #f7faff;
