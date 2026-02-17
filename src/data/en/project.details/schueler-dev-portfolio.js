@@ -1,14 +1,16 @@
-import devPortfolioHero from "../../../assets/images/dev-portfolio-hero.png";
-
+import overviewImg from "../../../assets/images/schueler-dev-overview.png";
 export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
   slug: "schueler-dev-portfolio",
 
   header: {
-    breadcrumb: "Selected / schueler.dev",
+    breadcrumb: [
+      { label: "Selected", route: "/projects" },
+      { label: "schueler.dev" },
+    ],
+
     title: "schueler.dev",
     subtitle:
-      "A minimal portfolio that treats UX decisions and code structure as one system.",
-
+      "A portfolio built as a scalable system—UX decisions and code structure treated as one.",
     links: [
       { type: "github", href: "https://github.com/ArneSchueler/dev-portfolio" },
       { type: "external", href: "https://schueler.dev" },
@@ -17,99 +19,72 @@ export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
 
   tabs: [
     { id: "overview", label: "Overview" },
-    { id: "system", label: "System" },
-    { id: "ux", label: "UX Decisions" },
+    { id: "goal", label: "Goal" },
+    { id: "implementation", label: "Implementation" },
     { id: "tech", label: "Tech" },
-    { id: "learnings", label: "Learnings" },
+    { id: "results", label: "Results" },
   ],
 
   content: [
     {
       id: "overview",
-      media: {
-        src: devPortfolioHero,
-        alt: "Portfolio preview",
-      },
+      media: { src: overviewImg, alt: "Portfolio overview" },
       chips: [
         { label: "Role", value: "Frontend / UX" },
-        { label: "Type", value: "Personal brand + case study" },
-        { label: "Stack", value: "React, Tailwind, Router" },
-        { label: "Focus", value: "Accessibility, IA, component structure" },
+        { label: "Stack", value: "React, Vite, Tailwind" },
+        { label: "Focus", value: "Structure, Accessibility" },
+        { label: "Year", value: "2025" },
       ],
       heading:
-        "A minimal portfolio designed for fast scanning, predictable navigation, and structured depth—where UX decisions and implementation reinforce each other.",
+        "A minimal portfolio optimized for fast scanning and structured case study presentation.",
       bullets: [
-        "Clear navigation with a section-based layout and predictable interactions",
-        "Content-driven components (data first, UI second) for scalability",
-        "Accessible patterns: focus states, semantics, readable contrast, keyboard support",
-        "Minimal visuals to keep attention on hierarchy, structure, and work samples",
-        "Consistent detail pages to support recruiter workflows",
+        "Clear hierarchy and predictable navigation",
+        "Tab-based detail pages for structured depth",
+        "Projects rendered from structured data objects",
       ],
     },
-
     {
-      id: "system",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      id: "goal",
+      media: { src: null, alt: "Portfolio goals" },
       heading:
-        "Built like a small design system: tokens, reusable UI patterns, and structured content data to scale without rewriting components.",
+        "Build a maintainable system that allows adding new projects without refactoring UI.",
       bullets: [
-        "Tokens as single source of truth for spacing, typography, and color decisions",
-        "Reusable patterns (navigation, buttons, cards, tabs) shared across pages",
-        "Content-first data model (projects as structured objects, not JSX)",
-        "Block-based rendering approach to keep UI extensible",
+        "Consistent structure across all projects",
+        "Separation of listing and detail data",
+        "Accessibility and semantic structure as defaults",
       ],
     },
-
     {
-      id: "ux",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      id: "implementation",
+      media: { src: null, alt: "Portfolio implementation" },
       heading:
-        "UX decisions focus on clarity and low cognitive load, optimized for portfolio reviewers who scan quickly.",
+        "Reusable UI components and slug-based routing power a scalable project system.",
       bullets: [
-        "Tab-based detail pages to avoid endless scrolling while keeping context stable",
-        "Clear CTA separation (repo vs live) to match typical reviewer intent",
-        "Consistent interaction states and feedback (hover, focus, active)",
-        "Readable hierarchy (headings, spacing, grouping) over visual decoration",
-        "Accessibility treated as baseline, not an enhancement",
+        "Dynamic rendering via project slug",
+        "Tab content resolved via id matching",
+        "Optional fields handled without layout breaks",
       ],
     },
-
     {
       id: "tech",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      media: { src: null, alt: "Portfolio tech stack" },
       heading:
-        "Implementation prioritizes maintainability through clear boundaries between UI components and content data.",
+        "A modular frontend stack focused on maintainability and clarity.",
       bullets: [
-        "React + Vite for a modular setup",
-        "React Router for slug-based routing (overview → project detail)",
-        "Tailwind for consistent spacing/typography utilities (token-like usage)",
-        "Helpers for navigation patterns and URL synchronization where needed",
-        "Project data separated into listing vs detail files for scalability",
+        "React + Vite setup",
+        "React Router for slug-based detail pages",
+        "Tailwind for consistent spacing and typography",
       ],
     },
-
     {
-      id: "learnings",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      id: "results",
+      media: { src: null, alt: "Portfolio results" },
       heading:
-        "Key learnings came from balancing simple navigation with a structured, extensible codebase.",
+        "A consistent and extensible portfolio system ready for future projects.",
       bullets: [
-        "Consistency beats novelty: a small set of well-defined patterns scales better than one-offs",
-        "Data modeling early prevents refactors when adding more case studies later",
-        "Accessibility is easiest when built into component APIs from the start",
-        "Active state handling (tabs/routes) should follow one stable strategy to avoid edge cases",
+        "Improved scalability through data modeling",
+        "Stable interaction logic for tabs",
+        "Reduced technical debt through structure",
       ],
     },
   ],

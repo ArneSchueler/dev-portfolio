@@ -2,97 +2,81 @@ export const GYMNIO_DETAIL = {
   slug: "gymnio",
 
   header: {
-    breadcrumb: "Projekte / Gymnio",
-    title: "Gymnio",
+    breadcrumb: [{ label: "UX", route: "/projects" }, { label: "Gymnio" }],
+    title: "Gymnio — AI Fitness Coach",
     subtitle:
-      "Smarteres Tracking, maßgeschneiderte Ernährung und Fortschritte, die sichtbar werden.",
-    heroImage: null,
-
-    links: [],
+      "A dashboard concept unifying training, nutrition, and coaching into one experience.",
+    links: [{ type: "behance", href: "https://github.com/placeholder/gymnio" }],
   },
 
   tabs: [
+    { id: "overview", label: "Overview" },
     { id: "challenge", label: "Challenge" },
-    { id: "solution", label: "Solution" },
     { id: "process", label: "Process" },
-    { id: "flow", label: "Userflow" },
-    { id: "result", label: "Result" },
-    { id: "learnings", label: "Learnings" },
+    { id: "solution", label: "Solution" },
+    { id: "results", label: "Results" },
   ],
 
   content: [
     {
-      id: "challenge",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      id: "overview",
+      media: { src: null, alt: "Gymnio overview" },
       chips: [
-        { label: "Rolle", value: "Produktdesigner (UX/UI)" },
-        { label: "Tools", value: "Figma, FigJam, ChatGPT" },
-        { label: "Fokus", value: "Dashboard Design" },
-        { label: "Jahr", value: "2025" },
+        { label: "Role", value: "Product Designer (UX/UI)" },
+        { label: "Tools", value: "Figma, FigJam" },
+        { label: "Focus", value: "Dashboard Design" },
+        { label: "Year", value: "2025" },
       ],
       heading:
-        "Viele Fitness-Apps wirken überladen und bieten wenig persönliche Motivation. Wichtige Bereiche sind oft über mehrere Plattformen verteilt.",
+        "Concept for a modular fitness dashboard supporting clarity and motivation.",
       bullets: [
-        "Unübersichtliche Oberflächen und fehlende Hierarchie",
-        "Getrennte Bereiche für Training, Ernährung und Coaching",
-        "Verlust von Orientierung und Motivation",
-        "Bedarf an einer integrierten, motivierenden Gesamtlösung",
+        "Training, nutrition, and progress unified",
+        "Clear visual hierarchy",
+        "Modular dashboard structure",
       ],
     },
     {
-      id: "solution",
+      id: "challenge",
+      media: { src: null, alt: "Gymnio challenge" },
       heading:
-        "Gymnio vereint alle relevanten Fitnessbereiche in einem visuell klaren, modularen Dashboard mit nachvollziehbarem Feedback.",
+        "Fitness apps often overload users and fragment key information.",
       bullets: [
-        "Modulares Dashboard für individuelle Zusammenstellung",
-        "Verknüpfung von Trainingsplänen, Ernährungszielen und Fortschritt",
-        "Klare Nutzerführung mit visuellem Feedback",
-        "Emotionales Design zur Steigerung von Motivation und Engagement",
+        "Scattered content and navigation",
+        "Low motivation due to unclear progress",
+        "Missing structural clarity",
       ],
     },
     {
       id: "process",
+      media: { src: null, alt: "Gymnio process" },
       heading:
-        "Der Designprozess umfasste drei Phasen mit steigendem Detailgrad.",
+        "Iterative design from low-fidelity structure to high-fidelity modular system.",
       bullets: [
-        "Lo-Fi: Layout und Informationshierarchie zur Absicherung der Nutzbarkeit",
-        "Mid-Fi: Interaktionslogik für Workouts, Ernährung und Fortschritt",
-        "Hi-Fi: visuelle Ausarbeitung und konsistentes, skalierbares System",
-        "Fokus auf Struktur, Typografie und Komponentenaufbau",
+        "Lo-Fi layout exploration",
+        "Interaction refinement",
+        "Consistent design system foundation",
       ],
     },
     {
-      id: "flow",
+      id: "solution",
+      media: { src: null, alt: "Gymnio solution" },
       heading:
-        "Der Userflow bildet zentrale Interaktionen im Dashboard ab, insbesondere das Management von Widgets.",
+        "A structured dashboard that connects goals, plans, and progress transparently.",
       bullets: [
-        "Widgets hinzufügen, verschieben oder entfernen",
-        "Rückmeldungen und optionale Bestätigungen",
-        "Nachvollziehbarkeit von Änderungen",
-        "Flüssige Nutzung ohne Verlust der Übersicht",
+        "Modular widget system",
+        "Clear feedback loops",
+        "Unified user flow",
       ],
     },
     {
-      id: "result",
+      id: "results",
+      media: { src: null, alt: "Gymnio results" },
       heading:
-        "Das Ergebnis ist ein klar strukturiertes, erweiterbares Dashboard-Konzept.",
+        "A coherent concept increasing clarity and perceived motivation.",
       bullets: [
-        "Einheitliches Dashboard für Training, Ernährung und Fortschritt",
-        "Transparente Fortschrittsdarstellung zur Motivationssteigerung",
-        "Modularer Aufbau für individuelle Anpassungen und Erweiterungen",
-      ],
-    },
-    {
-      id: "learnings",
-      heading:
-        "Wesentliche Erkenntnisse aus Struktur, Iteration und Systematik.",
-      bullets: [
-        "Informationsarchitektur stärkt Fokus und Orientierung",
-        "Iteratives Prototyping erhöht Vertrauen und Akzeptanz",
-        "Ein Designsystem beschleunigt zukünftige Workflows und fördert Konsistenz",
+        "Improved orientation",
+        "Higher transparency",
+        "Learning: structure drives engagement",
       ],
     },
   ],

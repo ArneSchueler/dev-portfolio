@@ -1,94 +1,97 @@
+// src/data/en/projects.details/tami.js
+
 export const TAMI_KITA_APP_DETAIL = {
   slug: "tami-kita-app",
 
   header: {
-    breadcrumb: "Projekte / Tami",
+    breadcrumb: [{ label: "UX", route: "/projects" }, { label: "Tami" }],
     title: "Tami",
     subtitle:
-      "Eine Kita-App im Human-Centered Design Prozess – entwickelt mit Fokus auf Nutzerbedürfnisse und Alltagstauglichkeit.",
-
-    links: [],
+      "A childcare app concept developed through a structured Human-Centered Design process to improve daily communication and organization.",
+    links: [
+      { type: "github", href: "https://github.com/placeholder/tami" },
+      { type: "external", href: "https://example.com/tami-case-study" },
+    ],
   },
 
   tabs: [
-    { id: "research", label: "Research" },
-    { id: "personas", label: "Personas" },
-    { id: "concept", label: "Konzept" },
-    { id: "design", label: "Design" },
-    { id: "evaluation", label: "Evaluation" },
-    { id: "conclusion", label: "Fazit" },
+    { id: "overview", label: "Overview" },
+    { id: "challenge", label: "Challenge" },
+    { id: "process", label: "Process" },
+    { id: "solution", label: "Solution" },
+    { id: "results", label: "Results" },
   ],
 
   content: [
     {
-      id: "research",
+      id: "overview",
+      media: { src: null, alt: "Tami app overview" },
       chips: [
-        { label: "Rolle", value: "Produktdesigner (UX/UI)" },
-        { label: "Tools", value: "Figma, Miro" },
-        { label: "Fokus", value: "Human-Centered Design" },
-        { label: "Jahr", value: "2023/2024" },
+        { label: "Role", value: "UX Designer" },
+        { label: "Method", value: "Human-Centered Design" },
+        { label: "Standard", value: "ISO 9241-210" },
+        { label: "Focus", value: "Accessibility & Daily Usability" },
+        { label: "Year", value: "2024" },
       ],
       heading:
-        "Zur Erhebung des Nutzungskontexts wurde eine Online-Umfrage mit 39 Teilnehmenden (Eltern und Erzieher:innen) durchgeführt.",
+        "Tami is a childcare app concept designed to simplify communication and coordination between parents and educators in everyday kindergarten routines.",
       bullets: [
-        "Krankmeldungen erfolgen meist telefonisch und sind fehleranfällig",
-        "Fehlende Transparenz bei Terminen und Abholregelungen",
-        "Wunsch nach digitaler, datenschutzkonformer Lösung",
-        "Top-Funktionen: Krankmeldung, Aktuelles, Chat/Postfach, Kalender, Dokumente und Abholerlaubnisse",
-      ],
-    },
-    {
-      id: "personas",
-      heading:
-        "Auf Basis der Ergebnisse entstanden drei Kernpersonas und Nutzungsszenarien zur Validierung realer Anwendungsfälle.",
-      bullets: [
-        "Lisa (Erzieherin): organisiert, empathisch, wünscht effizientere Prozesse",
-        "Laura (Mutter): jongliert Familie und Beruf, benötigt schnellen Überblick",
-        "Anna (Doppelrolle): verbindet beide Perspektiven",
-        "Szenarien zur Überprüfung von Struktur, Verständnis und Abläufen",
+        "Centralized platform for messages, absences, and appointments",
+        "Clear separation of core tasks to reduce friction",
+        "Accessible interface designed for quick daily use",
+        "Calm visual language to build trust and clarity",
       ],
     },
+
     {
-      id: "concept",
+      id: "challenge",
+      media: { src: null, alt: "Tami challenge context" },
       heading:
-        "Aus Research und Analyse wurden Gestaltungsprinzipien abgeleitet, um Orientierung und Zugänglichkeit zu verbessern.",
+        "Daily communication in childcare environments is time-sensitive, fragmented, and often handled through inefficient channels.",
       bullets: [
-        "Flache Informationsarchitektur: jede Funktion in einem eigenen Bereich",
-        "Aktionen statt Informationen im Fokus",
-        "Ruhige, warme Farbwelt: Flieder, Apricot, Creme",
-        "Barrierearme Gestaltung: große Touch-Zonen, gute Kontraste, einfache Typografie",
+        "Absence reporting is often handled by phone calls",
+        "Pickup permissions and changes are error-prone",
+        "Parents and educators lack a unified overview",
+        "Existing tools do not fully address daily workflow needs",
       ],
     },
+
     {
-      id: "design",
+      id: "process",
+      media: { src: null, alt: "Tami research and personas" },
       heading:
-        "Das finale Design übersetzt die Erkenntnisse in eine ruhige, klare und emotional zugängliche Oberfläche.",
+        "The concept was developed through a structured Human-Centered Design process based on research and validated scenarios.",
       bullets: [
-        "Klare Struktur und wiedererkennbare Navigation",
-        "Reduzierte Informationsdichte zur besseren Orientierung",
-        "Visuelle Wärme und Vertrauen durch Farb- und Formensprache",
-        "Konsequent auf Alltagstauglichkeit ausgelegt",
+        "Online survey to identify needs and pain points",
+        "Personas representing parents, educators, and dual roles",
+        "Usage scenarios to validate navigation and task flow",
+        "Iterative refinement from wireframes to high-fidelity screens",
       ],
     },
+
     {
-      id: "evaluation",
+      id: "solution",
+      media: { src: null, alt: "Tami interface concept" },
       heading:
-        "Für die Evaluation kam der UEQ-Fragebogen zum Einsatz, um zentrale UX-Faktoren zu messen.",
+        "A flat information architecture combined with accessibility-first design principles improves clarity and task efficiency.",
       bullets: [
-        "Durchgehend positive Bewertungen (≥ 2,5)",
-        "Hohe Werte bei Effizienz und Übersichtlichkeit",
-        "Vertrauen als besonders stark bewerteter Faktor",
-        "Geringe mentale Belastung durch klare Struktur und ruhige Darstellung",
+        "Each core function has a dedicated, predictable section",
+        "Large touch targets and strong contrast for accessibility",
+        "Warm color palette to communicate trust and calmness",
+        "Reduced visual noise to support quick daily interactions",
       ],
     },
+
     {
-      id: "conclusion",
+      id: "results",
+      media: { src: null, alt: "Tami evaluation results" },
       heading:
-        "Tami ist das Ergebnis eines vollständigen Human-Centered Design Prozesses von der Kontextanalyse bis zur Evaluation.",
+        "Evaluation indicates strong acceptance and improved clarity in everyday childcare coordination tasks.",
       bullets: [
-        "Konsequente Ausrichtung an Nutzerbedürfnissen",
-        "Funktionalität, emotionale Wärme und Barrierearmut kombiniert",
-        "Entlastung für Eltern und Erzieher:innen durch klare Abläufe",
+        "Positive feedback on usability and structure",
+        "Reduced perceived effort for routine tasks",
+        "Improved transparency between parents and educators",
+        "Learning: predictable structure improves trust and adoption",
       ],
     },
   ],

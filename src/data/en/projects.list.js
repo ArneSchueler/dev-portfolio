@@ -53,7 +53,7 @@ export const PROJECTS = [
   },
 
   {
-    slug: "frontend-showcase-masterarbeit",
+    slug: "frontend-showcase",
     tabs: ["selected", "ux"],
     overview: {
       title: "Frontend Showcase",

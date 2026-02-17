@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import TabNavigation from "../../components/ui/tabs/TabNavigation";
 import { PROJECT_DETAILS_BY_SLUG } from "../../data/en/project.details";
 
@@ -18,7 +18,24 @@ export function ProjectDetail() {
     <main className="flex h-screen flex-col overflow-y-scroll p-6 sm:ms-40 sm:p-40 md:ms-30 md:snap-y md:snap-mandatory">
       <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-12 lg:grid-cols-3">
         <div>
-          <a href="">{project.header.breadcrumb}</a>
+          <nav aria-label="Breadcrumb">
+            <ol className="flex gap-2">
+              {project.header.breadcrumb.map((item, index) => (
+                <li key={index}>
+                  {item.route ? (
+                    <Link
+                      className="transition hover:font-bold hover:text-cyan-500"
+                      to={item.route}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <span>/ {item.label}</span>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </nav>
           <h1 className="text-display font-semibold">{project.header.title}</h1>
         </div>
         <TabNavigation
@@ -30,7 +47,7 @@ export function ProjectDetail() {
         <div className="flex flex-col gap-4">
           {tabContent.media?.src && (
             <img
-              className="rounded-2xl shadow-md"
+              className="rounded-2xl shadow"
               src={tabContent.media.src}
               alt={tabContent.media.alt}
             />
@@ -49,7 +66,7 @@ export function ProjectDetail() {
           )}
         </div>
         <div className="flex flex-col gap-4 lg:col-span-2">
-          <p className="font-normal">{tabContent.heading}</p>
+          <p className="font-bold">{tabContent.heading}</p>
           <div>
             <ul className="flex flex-col gap-6">
               {tabContent.bullets.map((bulletText) => {
@@ -59,24 +76,6 @@ export function ProjectDetail() {
                   </li>
                 );
               })}
-              {/* <li className="border-s-2 border-cyan-500 ps-2">
-                <p>
-                  Content-driven components (data first, UI second) for
-                  scalability
-                </p>
-              </li>
-              <li className="border-s-2 border-cyan-500 ps-2">
-                <p>
-                  Accessible patterns: focus states, semantics, readable
-                  contrast, keyboard support
-                </p>
-              </li>
-              <li className="border-s-2 border-cyan-500 ps-2">
-                <p>
-                  Minimal visuals to keep attention on hierarchy, structure, and
-                  work samples
-                </p>
-              </li> */}
             </ul>
           </div>
         </div>

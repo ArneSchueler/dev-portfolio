@@ -1,99 +1,87 @@
+// src/data/en/projects.details/hattendorf.js
+
 export const HATTENDORF_DETAIL = {
   slug: "hattendorf-kosmetik",
 
   header: {
-    breadcrumb: "Projekte / Hattendorf",
-    title: "Hattendorf Kosmetik",
+    breadcrumb: [{ label: "UX", route: "/projects" }, { label: "Hattendorf" }],
+    title: "Hattendorf Kosmetik — Website Redesign",
     subtitle:
-      "Webdesign Redesign – ein moderner Markenauftritt für ein Kosmetikstudio, das Ästhetik und Vertrauen vereint.",
-    links: [],
+      "A calmer and clearer website concept improving brand perception and trust.",
+    links: [
+      { type: "github", href: "https://github.com/placeholder/hattendorf" },
+      { type: "external", href: "https://example.com/hattendorf" },
+    ],
   },
 
-  overviewCards: [
-    {
-      id: "context",
-      title: "Projektkontext",
-      text: "Lokales Kosmetikstudio mit Fokus auf hochwertige Behandlungen und persönliche Beratung. Der bestehende Auftritt basierte auf einem Standard-Template.",
-    },
-    {
-      id: "goal",
-      title: "Ziel",
-      text: "Ein klar strukturierter, emotional ansprechender Online-Auftritt, der Vertrauen stärkt und die Werte des Studios visuell transportiert.",
-    },
-    {
-      id: "focus",
-      title: "Fokus",
-      text: "Klarheit, ruhige Farbwelt, hochwertige Bildsprache, konsistente Typografie und reduzierte Navigation.",
-    },
-  ],
-
   tabs: [
+    { id: "overview", label: "Overview" },
     { id: "challenge", label: "Challenge" },
-    { id: "solution", label: "Solution" },
     { id: "process", label: "Process" },
-    { id: "result", label: "Result" },
-    { id: "learnings", label: "Learnings" },
+    { id: "solution", label: "Solution" },
+    { id: "results", label: "Results" },
   ],
 
   content: [
     {
-      id: "challenge",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      id: "overview",
+      media: { src: null, alt: "Hattendorf overview" },
       chips: [
-        { label: "Rolle", value: "Produktdesigner (UX/UI)" },
-        { label: "Tools", value: "Figma, ChatGPT" },
-        { label: "Fokus", value: "Website Redesign" },
-        { label: "Jahr", value: "2025" },
+        { label: "Role", value: "UX / UI Designer" },
+        { label: "Project Type", value: "Website Redesign Concept" },
+        { label: "Focus", value: "Brand Perception & Clarity" },
+        { label: "Tools", value: "Figma" },
+        { label: "Year", value: "2025" },
       ],
       heading:
-        "Das bestehende Design wirkte unruhig, technisch eingeschränkt und vermittelte keinen hochwertigen Ersteindruck.",
+        "Redesign focused on clarity, calm composition, and premium brand perception.",
       bullets: [
-        "Starres Template ohne klare Informationshierarchie",
-        "Inkonsistente Typografie und Farbwelt",
-        "Schwierige Darstellung individueller Inhalte",
-        "Geringe Markenwirkung und fehlende emotionale Führung",
+        "Improved visual hierarchy",
+        "Reduced cognitive load",
+        "Brand-consistent structure",
       ],
     },
     {
-      id: "solution",
+      id: "challenge",
+      media: { src: null, alt: "Hattendorf challenge" },
       heading:
-        "Das Redesign setzt auf Klarheit, Natürlichkeit und eine ruhige Farbwelt. Weißraum und Typografie erzeugen Premium-Wirkung.",
+        "Previous template restricted structure and reduced perceived professionalism.",
       bullets: [
-        "Reduzierte Struktur mit klarer Nutzerführung",
-        "Markenkonforme Farb- und Bildwelt für Vertrauen und Ruhe",
-        "Bessere Lesbarkeit durch klare Typografie und Hierarchie",
-        "Schneller Zugang zu Leistungen, Öffnungszeiten und Kontakt",
+        "Rigid layout constraints",
+        "Inconsistent typography",
+        "Weak first impression",
       ],
     },
     {
       id: "process",
-      heading: "Der Prozess folgte klaren Schritten von Analyse bis Prototyp.",
+      media: { src: null, alt: "Hattendorf process" },
+      heading:
+        "Research, wireframes, and prototyping guided the redesign direction.",
       bullets: [
-        "Research und Analyse: Bestand bewerten, Zielgruppe und Positionierung definieren",
-        "Wireframes: Struktur mit Fokus auf Übersichtlichkeit",
-        "Visual Design: moderner UI-Stil mit sanften Farben und organischen Formen",
-        "Prototyping: interaktiver Figma-Prototyp zur Abstimmung mit der Kundin",
+        "Audit of existing content",
+        "Rebuilt information hierarchy",
+        "Validated visual system through prototyping",
       ],
     },
     {
-      id: "result",
-      heading: "Ergebnis ist ein konsistenter, hochwertiger Markenauftritt.",
+      id: "solution",
+      media: { src: null, alt: "Hattendorf solution" },
+      heading:
+        "A minimal layout using whitespace and structured components to increase trust.",
       bullets: [
-        "Moderner Webauftritt mit hoher visueller Qualität",
-        "Reduzierte Navigation für bessere Nutzerführung",
-        "Markengenaue Farb- und Bildwelt, die Vertrauen ausstrahlt",
+        "Clear service navigation",
+        "Consistent typographic scale",
+        "Improved contact accessibility",
       ],
     },
     {
-      id: "learnings",
-      heading: "Schlüssel-Erkenntnisse aus dem Redesign-Projekt.",
+      id: "results",
+      media: { src: null, alt: "Hattendorf results" },
+      heading: "A coherent redesign strengthening trust and clarity.",
       bullets: [
-        "Redesign erfordert ein tiefes Verständnis der Markenidentität",
-        "Visuelle Konsistenz stärkt Vertrauen der Nutzer:innen",
-        "Klare Struktur und Reduktion erhöhen wahrgenommene Qualität",
+        "Improved usability",
+        "Higher perceived quality",
+        "Learning: structure shapes brand perception",
       ],
     },
   ],

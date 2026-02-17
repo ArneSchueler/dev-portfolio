@@ -1,106 +1,85 @@
+// src/data/en/projects.details/showcase.js
+
 export const FRONTEND_SHOWCASE_DETAIL = {
-  slug: "frontend-showcase-masterarbeit",
+  slug: "frontend-showcase",
 
   header: {
-    breadcrumb: "Projekte / Frontend Showcase",
+    breadcrumb: "UX / Frontend Showcase",
+    breadcrumb: [
+      { label: "UX", route: "/projects" },
+      { label: "Frontend Showcase" },
+    ],
     title: "Frontend Showcase",
     subtitle:
-      "Informationsvisualisierung für autonome Fahrzeugflotten – verständlich, effizient und visuell strukturiert.",
-    heroImage: null,
-    links: [],
+      "Information visualization concept for autonomous vehicle fleets.",
+    links: [
+      { type: "github", href: "https://github.com/placeholder/showcase" },
+      { type: "external", href: "https://example.com/showcase" },
+    ],
   },
 
   tabs: [
+    { id: "overview", label: "Overview" },
     { id: "challenge", label: "Challenge" },
     { id: "process", label: "Process" },
-    { id: "infovis", label: "InfoViz" },
-    { id: "evaluation", label: "Evaluation" },
+    { id: "solution", label: "Solution" },
     { id: "results", label: "Results" },
-    { id: "outlook", label: "Outlook" },
   ],
 
   content: [
     {
-      id: "challenge",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
-      chips: [
-        { label: "Rolle", value: "UX/UI-Designer" },
-        { label: "Tools", value: "Figma, FigJam" },
-        { label: "Fokus", value: "Informationsvisualisierung" },
-        { label: "Jahr", value: "2024" },
-      ],
+      id: "overview",
+      media: { src: null, alt: "Showcase overview" },
       heading:
-        "Vorhandene Systeme waren informationsreich, aber visuell überladen. Komplexe Echtzeitdaten mussten klar und intuitiv dargestellt werden.",
+        "Dashboard concept reducing cognitive load in complex real-time systems.",
       bullets: [
-        "Hohe Datenkomplexität bei Echtzeitinformationen",
-        "Zu viele gleichwertige Signale ohne Priorisierung",
-        "Fehlende visuelle Hierarchie und Navigationsklarheit",
-        "Ziel: visuell ansprechend, funktional und effizient navigierbar",
+        "Focus on clarity and anomaly detection",
+        "Interactive data exploration",
+        "Structured visual encoding",
+      ],
+    },
+    {
+      id: "challenge",
+      media: { src: null, alt: "Showcase challenge" },
+      heading: "Existing dashboards overwhelmed users with dense information.",
+      bullets: [
+        "High cognitive load",
+        "Unclear prioritization",
+        "Inefficient decision-making",
       ],
     },
     {
       id: "process",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      media: { src: null, alt: "Showcase process" },
       heading:
-        "Der Entwicklungsprozess folgte einem iterativen UX-Vorgehen mit User-Centered Design als Leitlinie.",
+        "Iterative UX process with structured evaluation and refinement.",
       bullets: [
-        "Low-Fidelity-Prototyping zur Layout- und Strukturvalidierung",
-        "High-Fidelity-Prototyping in Figma mit interaktiven Elementen",
-        "Nutzertests und Feedback-Schleifen zur kontinuierlichen Optimierung",
+        "Low to high fidelity prototyping",
+        "User-centered validation",
+        "Structured evaluation methods",
       ],
     },
     {
-      id: "infovis",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      id: "solution",
+      media: { src: null, alt: "Showcase solution" },
       heading:
-        "Reduktion kognitiver Belastung durch visuelle Kodierung und Diagramm-Patterns zur schnellen Erkennung kritischer Informationen.",
+        "Clear visual hierarchy and consistent encoding improve orientation and speed.",
       bullets: [
-        "Farbkodierte Statusanzeigen zur schnellen Priorisierung",
-        "Timeline-Visualisierung zur Erkennung von Anomalien",
-        "Bewusste Hierarchie durch Kontrast, Gewichtung und Gruppierung",
-      ],
-    },
-    {
-      id: "evaluation",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
-      heading:
-        "Evaluation mit UEQ und NASA-TLX zur Messung von Effizienz und mentaler Belastung.",
-      bullets: [
-        "UEQ: positive UX-Werte in zentralen Faktoren",
-        "NASA-TLX: geringe mentale Belastung",
-        "Benutzer:innen empfanden Visualisierung als hilfreich für die Arbeit",
+        "Color-coded status logic",
+        "Timeline anomaly detection",
+        "Filter and drilldown interactions",
       ],
     },
     {
       id: "results",
-      media: {
-        src: null,
-        alt: "Portfolio preview",
-      },
+      media: { src: null, alt: "Showcase results" },
       heading:
-        "Die Ergebnisse zeigen, dass gute Informationsvisualisierung die User Experience signifikant verbessert.",
+        "Evaluation showed improved efficiency and reduced mental effort.",
       bullets: [
-        "Klare visuelle Kodierung reduziert Frustration",
-        "Interaktive Elemente erhöhen Kontrolle und Effizienz",
-        "Konsistentes Farbsystem steigert Orientierung und Vertrauen",
+        "Positive evaluation results",
+        "Improved anomaly recognition",
+        "Learning: consistency drives trust",
       ],
-    },
-    {
-      id: "outlook",
-      heading:
-        "Zukünftige Erweiterungen könnten Machine Learning und Predictive Analytics integrieren, um Muster automatisch zu erkennen.",
     },
   ],
 };
