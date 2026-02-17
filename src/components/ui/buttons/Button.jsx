@@ -46,6 +46,13 @@ export const redirectBtn = {
   className: `w-fit`,
   isExternal: true,
 };
+export const behanceBtn = {
+  title: "",
+  icon: "ph:behance-logo-light",
+  route: "",
+  className: `w-fit`,
+  isExternal: true,
+};
 
 export default function Button({
   title = "View Projects",
