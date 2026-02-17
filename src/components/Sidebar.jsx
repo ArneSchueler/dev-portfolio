@@ -66,7 +66,9 @@ function Sidebar({ activeSection }) {
                 key={id}
                 aria-label={label}
                 className={isActive ? activeItem : itemBase}
-                onClick={() => scrollToSection(id)}
+                onClick={() =>
+                  handleSectionNavigation({ id, location, navigate })
+                }
               >
                 <Icon icon={icon} className="size-8" />
               </button>
