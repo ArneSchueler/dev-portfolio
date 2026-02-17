@@ -1,10 +1,14 @@
 import ProjectCardList from "../../../components/ui/card/ProjectCardList.jsx";
 import TabNavigation from "../../../components/ui/tabs/TabNavigation.jsx";
-import { PROJECTS, PROJECT_TABS } from "../../../data/en/projects.js";
+import { PROJECTS, PROJECT_TABS } from "../../../data/en/projects.list.js";
 import { useState } from "react";
 
 export function ProjectsSection() {
   const [currentTab, setCurrentTab] = useState("selected");
+
+  const filteredProjects = PROJECTS.filter((project) =>
+    project.tabs.includes(currentTab)
+  );
 
   return (
     <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-8 lg:grid-cols-3">
@@ -14,7 +18,7 @@ export function ProjectsSection() {
         currentTab={currentTab}
         onTabChange={setCurrentTab}
       />
-      <ProjectCardList items={PROJECTS} />
+      <ProjectCardList items={filteredProjects} />
     </div>
   );
 }

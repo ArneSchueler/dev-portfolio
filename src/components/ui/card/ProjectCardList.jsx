@@ -23,7 +23,7 @@ export default function ProjectCardList({ items }) {
               <Button {...projectDetailsBtn} route={`/project/${slug}`} />
               <div className="flex gap-4">
                 {github && <Button {...githubBtn} route={github} />}
-                <Button {...redirectBtn} route={external} />
+                {external && <Button {...redirectBtn} route={external} />}
               </div>
             </div>
           </article>

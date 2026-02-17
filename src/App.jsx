@@ -2,7 +2,7 @@ import Sidebar from "./components/Sidebar.jsx";
 import Home from "./pages/home/Home.jsx";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import { DevProject } from "./pages/projects/DevProject.jsx";
+import { ProjectDetail } from "./pages/projects/ProjectDetail.jsx";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -13,7 +13,7 @@ function App() {
         <Sidebar activeSection={activeSection} />
       </header>
       <Routes>
-        <Route path="/project/:slug" element={<DevProject />} />
+        <Route path="/project/:slug" element={<ProjectDetail />} />
         <Route
           path="/"
           element={<Home setActiveSection={setActiveSection} />}
