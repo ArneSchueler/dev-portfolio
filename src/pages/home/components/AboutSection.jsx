@@ -1,14 +1,17 @@
 import { useState } from "react";
 import TabNavigation from "../../../components/ui/tabs/TabNavigation";
-import { ABOUT_TABS, ABOUT_CONTENT } from "../../../data/en/about";
+import { useLanguage } from "../../../state/language.context";
 
 export function AboutSection() {
   const [currentTab, setCurrentTab] = useState("about");
+  const { data } = useLanguage();
+  const { ABOUT } = data.site;
+  const { ABOUT_TABS, ABOUT_CONTENT } = data.about;
   const content = ABOUT_CONTENT.find((content) => content.id === currentTab);
 
   return (
     <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-8 lg:grid-cols-3">
-      <h1 className="text-display font-semibold">About</h1>
+      <h1 className="text-display font-semibold">{ABOUT.title}</h1>
       <TabNavigation
         items={ABOUT_TABS}
         currentTab={currentTab}

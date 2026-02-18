@@ -1,6 +1,6 @@
 export const PROJECT_TABS = [
-  { id: "selected", label: "Selected" },
-  { id: "dev", label: "Dev" },
+  { id: "selected", label: "Ausgewählte" },
+  { id: "dev", label: "Entwicklung" },
   { id: "ux", label: "UX" },
 ];
 
@@ -11,7 +11,7 @@ export const PROJECT_CARDS = [
     overview: {
       title: "schueler.dev Portfolio",
       description:
-        "Personal portfolio built to showcase UX-first frontend thinking, system structure, and accessible UI patterns.",
+        "Persönliches Portfolio zur Darstellung von UX-orientiertem Frontend-Denken, Systemstruktur und barrierefreien UI-Mustern.",
       stack: ["React", "Vite", "Tailwind CSS", "React Router"],
       links: [
         {
@@ -29,7 +29,7 @@ export const PROJECT_CARDS = [
     overview: {
       title: "Gymnio",
       description:
-        "AI Fitness Coach – Dashboard-Konzept zur strukturierten Darstellung von Training, Ernährung und Fortschritt.",
+        "KI Fitness Coach – Dashboard-Konzept zur strukturierten Darstellung von Training, Ernährung und Fortschritt.",
       stack: ["Figma", "FigJam", "UX Design"],
       links: [
         {
@@ -70,8 +70,8 @@ export const PROJECT_CARDS = [
     overview: {
       title: "Tami – Kita App",
       description:
-        "Mobile App im Human-Centered Design Prozess zur Vereinfachung der Kommunikation zwischen Eltern und Erzieher:innen.",
-      stack: ["Figma", "Miro", "UX Research", "HCD"],
+        "Mobile App im Human-Centered-Design-Prozess zur Vereinfachung der Kommunikation zwischen Eltern und Erzieher:innen.",
+      stack: ["Figma", "Miro", "UX Research", "Human-Centered Design"],
       links: [],
     },
   },
@@ -81,7 +81,8 @@ export const PROJECT_CARDS = [
     tabs: ["dev"],
     overview: {
       title: "BicycleShop VR",
-      description: "VR product experience prototype with focus on interaction.",
+      description:
+        "VR-Prototyp für eine Produkt- und Werkstatterfahrung mit Fokus auf Interaktion.",
       stack: ["Unity", "C#", "XR"],
       links: [
         {
@@ -92,3 +93,7 @@ export const PROJECT_CARDS = [
     },
   },
 ];
+
+export const PROJECTS_SECTION = {
+  title: "Projekte",
+};

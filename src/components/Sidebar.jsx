@@ -1,4 +1,4 @@
-import LanguageButton from "./ui/buttons/LanguageButton";
+import LanguageSwitch from "./ui/buttons/LanguageSwitch";
 import { handleSectionNavigation } from "../utils/helpers";
 import { NAV_ITEMS } from "../data/en/nav";
 import { ICONS } from "./ui/icons";
@@ -45,13 +45,13 @@ function Sidebar({ activeSection }) {
           })}
         </div>
 
-        <LanguageButton />
+        <LanguageSwitch />
       </aside>
 
       {/* Mobile Sidebar Header */}
       <aside className="fixed z-10 flex w-full items-center justify-between bg-white px-4 py-2 sm:hidden">
         <Logo />
-        <LanguageButton />
+        <LanguageSwitch />
       </aside>
 
       {/* Mobile Sidebar Navigation */}

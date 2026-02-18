@@ -18,6 +18,27 @@ export const PROJECTS = {
 export const ABOUT = {
   title: "About",
 };
-export const Contact = {
+
+export const CONTACT = {
   title: "Contact",
+  subheader: "Let’s work together",
+  description:
+    "Frontend Developer with a strong UX focus, building clear and accessible interfaces where design translates directly into code. Open to frontend opportunities and digital products.",
+  content: [
+    {
+      id: "email",
+      title: "E-Mail",
+      link: "arne@schueler.dev",
+    },
+    {
+      id: "github",
+      title: "Github",
+      link: "github.com/ArneSchueler",
+    },
+    {
+      id: "linkedin",
+      title: "LinkedIn",
+      link: "linkedin.com/in/arneschueler",
+    },
+  ],
 };

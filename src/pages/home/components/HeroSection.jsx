@@ -2,13 +2,13 @@ import { ctaBtn } from "../../../components/ui/buttons/Button.jsx";
 
 import profileImg from "../../../assets/images/profile-image.png";
 import Buttons from "../../../components/ui/buttons/Button.jsx";
-import { HERO } from "../../../data/en/site.js";
+import { useLanguage } from "../../../state/language.context.jsx";
 
-function TechStack() {
+function TechStack({ techStack }) {
   return (
     <div className="col-span-3 row-start-4 flex w-fit border-y py-6 lg:mr-40">
       <span className="text-body color-muted font-tech tracking-wide">
-        {HERO.techStack}
+        {techStack}
       </span>
     </div>
   );
@@ -27,6 +27,8 @@ function ProfileImg() {
 }
 
 export function HeroSection() {
+  const { data } = useLanguage();
+  const { HERO } = data.site;
   return (
     <div className="sm:auto-rows-4 grid h-full max-h-screen max-w-400 items-start justify-center gap-y-8 sm:gap-y-0 lg:grid-cols-4">
       <div className="col-span-4 flex flex-col gap-13">
@@ -35,7 +37,7 @@ export function HeroSection() {
 
         <Buttons {...ctaBtn} route="/projects"></Buttons>
       </div>
-      <TechStack />
+      <TechStack techStack={HERO.techStack} />
       <ProfileImg />
     </div>
   );

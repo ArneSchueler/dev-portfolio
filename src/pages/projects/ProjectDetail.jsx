@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import TabNavigation from "../../components/ui/tabs/TabNavigation";
-import { PROJECT_DETAILS_BY_SLUG } from "../../data/en/project.details";
+import { useLanguage } from "../../state/language.context";
 
 export function ProjectDetail() {
   const { slug } = useParams();
-  const project = PROJECT_DETAILS_BY_SLUG[slug];
+  const { data } = useLanguage();
+  const project = data.projectDetails[slug];
   if (!project) return <div>Project not found.</div>;
 
   const [currentTab, setCurrentTab] = useState(`${project.content[0].id}`);
