@@ -84,8 +84,10 @@ export const PROJECTS = [
       description: "VR product experience prototype with focus on interaction.",
       stack: ["Unity", "C#", "XR"],
       links: [
-        { type: "github", href: "https://github.com/..." },
-        { type: "external", href: "https://..." },
+        {
+          type: "external",
+          href: "https://drive.google.com/file/d/1VwHO-o0TO013wi_6vUDKDh19M4beqEce/view?usp=sharing",
+        },
       ],
     },
   },

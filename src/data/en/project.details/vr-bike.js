@@ -9,7 +9,12 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     title: "VR Bicycle Workshop",
     subtitle:
       "An interactive VR workshop prototype focused on immersion and structured interaction.",
-    links: [{ type: "external", href: "https://video.example.com/vr-demo" }],
+    links: [
+      {
+        type: "external",
+        href: "https://drive.google.com/file/d/1VwHO-o0TO013wi_6vUDKDh19M4beqEce/view?usp=sharing",
+      },
+    ],
   },
 
   tabs: [
