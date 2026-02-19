@@ -1,6 +1,6 @@
 export const PROJECT_TABS = [
   { id: "selected", label: "Selected" },
-  { id: "dev", label: "Dev" },
+  { id: "dev", label: "Development" },
   { id: "ux", label: "UX" },
 ];
 
@@ -11,7 +11,7 @@ export const PROJECT_CARDS = [
     overview: {
       title: "schueler.dev Portfolio",
       description:
-        "Personal portfolio built to showcase UX-first frontend thinking, system structure, and accessible UI patterns.",
+        "Personal portfolio built to showcase UX-first frontend thinking, structured system design, and accessible user interface patterns.",
       stack: ["React", "Vite", "Tailwind CSS", "React Router"],
       links: [
         {
@@ -29,7 +29,7 @@ export const PROJECT_CARDS = [
     overview: {
       title: "Gymnio",
       description:
-        "AI Fitness Coach – Dashboard-Konzept zur strukturierten Darstellung von Training, Ernährung und Fortschritt.",
+        "AI Fitness Coach – Dashboard concept for structured visualization of training, nutrition, and progress.",
       stack: ["Figma", "FigJam", "UX Design"],
       links: [
         {
@@ -46,7 +46,7 @@ export const PROJECT_CARDS = [
     overview: {
       title: "Hattendorf Kosmetik",
       description:
-        "Webdesign-Redesign für ein Kosmetikstudio mit Fokus auf Klarheit, Natürlichkeit und Vertrauen.",
+        "Website redesign for a beauty studio focusing on clarity, natural aesthetics, and trust.",
       stack: ["Figma", "UX Design", "Branding"],
       links: [],
     },
@@ -58,7 +58,7 @@ export const PROJECT_CARDS = [
     overview: {
       title: "Frontend Showcase",
       description:
-        "Masterarbeit: Interaktives UI/UX-Konzept zur Informationsvisualisierung autonomer Fahrzeugflotten mit Fokus auf kognitive Entlastung.",
+        "Master’s thesis: Interactive UI/UX concept for information visualization of autonomous vehicle fleets with a focus on cognitive load reduction.",
       stack: ["Figma", "FigJam", "Research", "Information Visualization"],
       links: [],
     },
@@ -68,10 +68,10 @@ export const PROJECT_CARDS = [
     slug: "tami-kita-app",
     tabs: ["ux"],
     overview: {
-      title: "Tami – Kita App",
+      title: "Tami – Childcare App",
       description:
-        "Mobile App im Human-Centered Design Prozess zur Vereinfachung der Kommunikation zwischen Eltern und Erzieher:innen.",
-      stack: ["Figma", "Miro", "UX Research", "HCD"],
+        "Mobile application developed through a Human-Centered Design process to simplify communication between parents and educators.",
+      stack: ["Figma", "Miro", "UX Research", "Human-Centered Design"],
       links: [],
     },
   },
@@ -81,7 +81,8 @@ export const PROJECT_CARDS = [
     tabs: ["dev"],
     overview: {
       title: "BicycleShop VR",
-      description: "VR product experience prototype with focus on interaction.",
+      description:
+        "Virtual reality product experience prototype focused on immersive and structured interaction.",
       stack: ["Unity", "C#", "XR"],
       links: [
         {
