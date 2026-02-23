@@ -1,3 +1,5 @@
+import gymnioOverview from "../../../assets/images/gymnio/GYMNIO-dashboard-overview.png";
+
 export const GYMNIO_DETAIL = {
   slug: "gymnio",
 
@@ -20,7 +22,7 @@ export const GYMNIO_DETAIL = {
   content: [
     {
       id: "overview",
-      media: { src: null, alt: "Gymnio Überblick" },
+      media: { src: gymnioOverview, alt: "Gymnio Überblick" },
       chips: [
         { label: "Rolle", value: "Product Designer (UX/UI)" },
         { label: "Tools", value: "Figma, FigJam" },
