@@ -6,39 +6,54 @@ import { useLanguage } from "../../../state/language.context.jsx";
 
 function TechStack({ techStack }) {
   return (
-    <div className="col-span-3 row-start-4 flex w-fit border-y py-6 lg:mr-40">
-      <span className="text-body color-muted font-tech tracking-wide">
-        {techStack}
-      </span>
+    <div className="bg flex flex-col gap-8 rounded-2xl border border-slate-500/10 p-6 shadow-md">
+      <h3>Tech Stack</h3>
+      <div className="flex w-full flex-wrap gap-2">
+        {techStack.map((stack) => {
+          return (
+            <div className="text-md flex w-fit gap-2 rounded-full bg-slate-500/10 px-2 py-1 shadow">
+              <span>{stack}</span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
 
 function ProfileImg() {
   return (
-    <div className="col-end-5 row-start-3 row-end-5 translate-y-1/4">
-      <img
-        className="hidden w-120 -rotate-6 lg:block"
-        src={profileImg}
-        alt="Profile image of Arne Schüler"
-      />
-    </div>
+    <img
+      className="shrink-0 -rotate-6 shadow-md"
+      src={profileImg}
+      alt="Profile image of Arne Schüler"
+    />
   );
 }
 
 export function HeroSection() {
   const { data } = useLanguage();
   const { HERO } = data.site;
-  return (
-    <div className="sm:auto-rows-4 grid h-full max-h-screen max-w-400 items-start justify-center gap-y-8 sm:gap-y-0 lg:grid-cols-4">
-      <div className="col-span-4 flex flex-col gap-13">
-        <h1>{HERO.header}</h1>
-        <p className="max-w-145 text-xl">{HERO.subheader}</p>
 
-        <Buttons {...ctaBtn} route="/projects"></Buttons>
+  return (
+    <div className="relative flex min-h-[70vh] w-full flex-col items-start justify-between lg:flex-row">
+      <div className="flex h-full flex-col gap-20">
+        <div className="flex flex-col gap-10">
+          <h1 className="text-5xl font-bold">{HERO.header}</h1>
+          <p className="max-w-145 text-xl">{HERO.subheader}</p>
+          <div className="w-fit">
+            <Buttons {...ctaBtn} route="/projects" />
+          </div>
+        </div>
+
+        <div className="mt-20">
+          <TechStack techStack={HERO.techStack} />
+        </div>
       </div>
-      <TechStack techStack={HERO.techStack} />
-      <ProfileImg />
+
+      <div className="lg:mbe-5 hidden w-[clamp(350px,30vw,350px)] self-center lg:block lg:self-end">
+        <ProfileImg />
+      </div>
     </div>
   );
 }
