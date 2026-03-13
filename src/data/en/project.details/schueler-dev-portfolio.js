@@ -1,4 +1,4 @@
-import overviewImg from "../../../assets/images/schueler-dev-overview.png";
+import overviewImg from "../../../assets/images/dev-portfolio/schueler-dev-overview.png";
 export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
   slug: "schueler-dev-portfolio",
 

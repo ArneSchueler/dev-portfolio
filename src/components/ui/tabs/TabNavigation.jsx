@@ -7,7 +7,7 @@ export default function TabNavigation({ items, currentTab, onTabChange }) {
   return (
     <nav
       role="tablist"
-      className="flex h-full gap-5 items-center lg:col-span-2"
+      className="flex h-full items-center gap-8 lg:col-span-2"
     >
       {items.map(({ id, label }) => {
         const isActive = currentTab === id;

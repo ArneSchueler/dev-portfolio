@@ -212,3 +212,7 @@ aside {
 @utility writing-vertical {
   writing-mode: var(--writing-vertical);
 }
+
+pre.shiki {
+  background-color: transparent !important;
+}

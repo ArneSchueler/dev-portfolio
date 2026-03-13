@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import TabNavigation from "../../components/ui/tabs/TabNavigation";
 import { useLanguage } from "../../state/language.context";
+import { CodeBlock } from "../../components/Codeblock";
+import Button, {
+  githubBtn,
+  redirectBtn,
+  behanceBtn,
+} from "../../components/ui/buttons/Button";
 
 export function ProjectDetail() {
   const { slug } = useParams();
@@ -15,11 +21,22 @@ export function ProjectDetail() {
     (tabContent) => tabContent.id === currentTab
   );
 
+  const links = project.header.links.map((link) => {
+    return link;
+  });
+
+  const github = links.find((link) => link.type === "github")?.href;
+  const external = links.find((link) => link.type === "external")?.href;
+  const behance = links.find((link) => link.type === "behance")?.href;
+
   return (
-    <main className="flex h-screen flex-col overflow-y-scroll p-6 sm:ms-40 sm:p-40 md:ms-30 md:snap-y md:snap-mandatory">
-      <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-12 lg:grid-cols-3">
-        <div>
-          <nav aria-label="Breadcrumb">
+    <main className="flex h-fit min-h-screen flex-col p-6 sm:ms-40 sm:px-40 sm:pt-40 md:ms-30">
+      <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-12 2xl:grid-cols-[minmax(550px,2fr)_3fr]">
+        <div className="lg:col-start-1">
+          <nav
+            className="flex items-center justify-between"
+            aria-label="Breadcrumb"
+          >
             <ol className="flex gap-2">
               {project.header.breadcrumb.map((item, index) => (
                 <li key={index}>
@@ -36,23 +53,42 @@ export function ProjectDetail() {
                 </li>
               ))}
             </ol>
+            <div className="flex gap-4">
+              {github && <Button {...githubBtn} route={github} />}
+              {external && <Button {...redirectBtn} route={external} />}
+              {behance && <Button {...behanceBtn} route={behance} />}
+            </div>
           </nav>
           <h1 className="text-display font-semibold">{project.header.title}</h1>
         </div>
-        <TabNavigation
-          items={project.tabs}
-          currentTab={currentTab}
-          onTabChange={setCurrentTab}
-        />
+        <div className="lg:col-start-2">
+          <TabNavigation
+            items={project.tabs}
+            currentTab={currentTab}
+            onTabChange={setCurrentTab}
+          />
+        </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
           {tabContent.media?.src && (
             <img
-              className="rounded-2xl shadow"
+              className="w-full rounded-2xl shadow"
               src={tabContent.media.src}
               alt={tabContent.media.alt}
             />
           )}
+
+          {tabContent.codeExamples && (
+            <div className="flex w-full flex-col gap-8 rounded-2xl bg-slate-400/10 p-4">
+              <div className="flex gap-8">
+                <h4 className="font-bold">
+                  {tabContent.codeExamples[0].title}
+                </h4>
+              </div>
+              <CodeBlock code={tabContent.codeExamples[0].code} />
+            </div>
+          )}
+
           {tabContent?.chips && (
             <div className="flex flex-wrap gap-2 ps-2">
               {tabContent.chips.map(({ label, value }) => {
@@ -66,19 +102,22 @@ export function ProjectDetail() {
             </div>
           )}
         </div>
-        <div className="flex flex-col gap-4 lg:col-span-2">
-          <p className="font-bold">{tabContent.heading}</p>
-          <div>
-            <ul className="flex flex-col gap-6">
-              {tabContent.bullets.map((bulletText) => {
-                return (
-                  <li className="border-s-2 border-cyan-500 ps-2">
-                    {bulletText}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+        <div className="flex flex-col gap-8">
+          <p className="max-w-150 font-semibold">{tabContent.intro}</p>
+          {tabContent.bullets && (
+            <div>
+              <ul className="flex flex-col gap-6">
+                {tabContent.bullets.map((bulletText) => {
+                  return (
+                    <li>
+                      <span className="pe-4 text-xl text-cyan-500">/</span>
+                      {bulletText}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </main>

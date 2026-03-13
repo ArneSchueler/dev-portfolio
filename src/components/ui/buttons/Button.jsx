@@ -34,29 +34,33 @@ export const projectDetailsBtn = {
 export const githubBtn = {
   title: "",
   icon: "ph:github-logo-light",
+  ariaLabel: "GitHub Repository öffnen",
   route: "",
-  className: `w-fit`,
+  className: `w-fit p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
   isExternal: true,
 };
 
 export const redirectBtn = {
   title: "",
   icon: "ph:arrow-square-out-light",
+  ariaLabel: "Link öffnen",
   route: "",
-  className: `w-fit`,
+  className: `w-fit p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
   isExternal: true,
 };
 export const behanceBtn = {
   title: "",
   icon: "ph:behance-logo-light",
+  ariaLabel: "Behance Projekt öffnen",
   route: "",
-  className: `w-fit`,
+  className: `w-fit p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
   isExternal: true,
 };
 
 export default function Button({
   title = "View Projects",
   icon,
+  ariaLabel,
   route = "/",
   className,
   isExternal = false,
@@ -78,7 +82,13 @@ export default function Button({
     );
   } else {
     return (
-      <a href={route} className={className} target="_blank" rel="noreferrer">
+      <a
+        href={route}
+        className={className}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={ariaLabel}
+      >
         {title}
         <Icon icon={icon} className="size-7" />
       </a>
