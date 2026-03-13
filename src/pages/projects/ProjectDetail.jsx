@@ -94,12 +94,10 @@ export function ProjectDetail() {
                 open={open}
                 close={() => setOpen(false)}
                 slides={[{ src: tabContent.media.src }]}
-                // Deaktiviert unnötige Animationen für den minimalistischen Look
                 animation={{ fade: 300 }}
                 render={{
                   buttonPrev: () => null,
                   buttonNext: () => null,
-                  // Hier erzwingen wir unsere eigenen Styles auf das Image-Element
                   slide: ({ slide }) => (
                     <div className="flex h-full w-full items-center justify-center p-4">
                       <img
@@ -110,8 +108,8 @@ export function ProjectDetail() {
                     </div>
                   ),
                 }}
-                toolbar={{ buttons: ["close"] }} // Zeigt nur das Schließen-X oben rechts
-                controller={{ closeOnBackdropClick: true }} // Schließen durch Klick daneben
+                toolbar={{ buttons: ["close"] }}
+                controller={{ closeOnBackdropClick: true }}
                 styles={{
                   container: { backgroundColor: "rgba(0, 0, 0, .4)" },
                 }}
