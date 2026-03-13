@@ -3,6 +3,8 @@ import Home from "./pages/home/Home.jsx";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { ProjectDetail } from "./pages/projects/ProjectDetail.jsx";
+import LegalNotice from "./pages/LegalNotice.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -18,11 +20,12 @@ function App() {
           path="/"
           element={<Home setActiveSection={setActiveSection} />}
         />
-        {/* loads for all urls with section Home component */}
         <Route
           path="/:section"
           element={<Home setActiveSection={setActiveSection} />}
         />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/legal-notice" element={<LegalNotice />} />
       </Routes>
     </>
   );

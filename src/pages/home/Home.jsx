@@ -9,6 +9,7 @@ import {
 } from "./components/index.js";
 
 import { scrollToSection } from "../../utils/helpers.js";
+import Footer from "../../components/Footer.jsx";
 
 // points to dom element
 
@@ -27,7 +28,7 @@ export default function Home({ setActiveSection }) {
       scrollToSection(section);
     },
     // run useEffect when section changes
-    [section],
+    [section]
   );
   // internal Observer
   // renders url and sidebar of section on scroll
@@ -52,7 +53,7 @@ export default function Home({ setActiveSection }) {
             // which section is more visible (most visible first)
             .sort(
               (sectionA, sectionB) =>
-                sectionB.intersectionRatio - sectionA.intersectionRatio,
+                sectionB.intersectionRatio - sectionA.intersectionRatio
             )[0];
 
           if (!visibleSection) return;
@@ -75,7 +76,7 @@ export default function Home({ setActiveSection }) {
         {
           root: container,
           threshold: [0.6],
-        },
+        }
       );
 
       sectionIds.forEach((id) => {
@@ -90,41 +91,42 @@ export default function Home({ setActiveSection }) {
     },
     // run useEffect once on render
 
-    [],
+    []
   );
 
   return (
     <main
       ref={containerRef}
-      className="flex flex-col h-screen sm:ms-40 md:ms-30 p-6 sm:p-40 overflow-y-scroll md:snap-y md:snap-mandatory"
+      className="flex h-screen flex-col overflow-y-scroll p-6 sm:ms-40 sm:p-40 md:ms-30 md:snap-y md:snap-mandatory"
     >
       <section
         id="hero"
-        className=" flex flex-col box-border py-40 items-center sm:min-h-screen text-slate-950 snap-start"
+        className="box-border flex snap-start flex-col items-center py-40 text-slate-950 sm:min-h-screen"
       >
         <HeroSection />
       </section>
 
       <section
         id="projects"
-        className=" flex flex-col box-border py-40 items-center sm:min-h-screen text-slate-950 snap-start"
+        className="box-border flex snap-start flex-col items-center py-40 text-slate-950 sm:min-h-screen"
       >
         <ProjectsSection></ProjectsSection>
       </section>
 
       <section
         id="about"
-        className="flex flex-col box-border py-40  items-center sm:min-h-screen text-slate-950 snap-start"
+        className="box-border flex snap-start flex-col items-center py-40 text-slate-950 sm:min-h-screen"
       >
         <AboutSection></AboutSection>
       </section>
 
       <section
         id="contact"
-        className="flex flex-col box-border py-40 items-center sm:min-h-screen text-slate-950 snap-start"
+        className="box-border flex snap-start flex-col items-center py-40 text-slate-950 sm:min-h-screen"
       >
         <ContactSection></ContactSection>
       </section>
+      <Footer />
     </main>
   );
 }
