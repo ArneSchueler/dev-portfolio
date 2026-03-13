@@ -9,4 +9,5 @@ export const ICONS = {
   external: "ph:arrow-square-out-light",
   light: "ph:sun-dim-light",
   dark: "ph:moon-light",
+  enlarge: "ph:arrows-out-light",
 };

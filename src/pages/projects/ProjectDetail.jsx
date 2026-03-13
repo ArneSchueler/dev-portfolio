@@ -8,10 +8,17 @@ import Button, {
   redirectBtn,
   behanceBtn,
 } from "../../components/ui/buttons/Button";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { ICONS } from "../../components/ui/icons";
+import { Icon } from "@iconify/react";
 
 export function ProjectDetail() {
   const { slug } = useParams();
   const { data } = useLanguage();
+
+  const [open, setOpen] = useState(false);
+
   const project = data.projectDetails[slug];
   if (!project) return <div>Project not found.</div>;
 
@@ -71,11 +78,45 @@ export function ProjectDetail() {
 
         <div className="flex flex-col gap-8">
           {tabContent.media?.src && (
-            <img
-              className="w-full rounded-2xl shadow"
-              src={tabContent.media.src}
-              alt={tabContent.media.alt}
-            />
+            <div className="group relative cursor-zoom-in">
+              <img
+                className="w-full rounded-2xl shadow"
+                src={tabContent.media.src}
+                alt={tabContent.media.alt}
+                onClick={() => setOpen(true)}
+              />
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl bg-black/10 opacity-0 transition-opacity group-hover:opacity-100">
+                <span className="rounded-full bg-white/90 p-2 text-sm font-medium shadow-md">
+                  <Icon className="text-4xl" icon={ICONS.enlarge}></Icon>
+                </span>
+              </div>
+              <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                slides={[{ src: tabContent.media.src }]}
+                // Deaktiviert unnötige Animationen für den minimalistischen Look
+                animation={{ fade: 300 }}
+                render={{
+                  buttonPrev: () => null,
+                  buttonNext: () => null,
+                  // Hier erzwingen wir unsere eigenen Styles auf das Image-Element
+                  slide: ({ slide }) => (
+                    <div className="flex h-full w-full items-center justify-center p-4">
+                      <img
+                        src={slide.src}
+                        alt="Projekt Ansicht"
+                        className="w-[clamp(300px, 90vw, 1200px)] h-auto max-h-[85vh] rounded-2xl object-fill shadow-2xl"
+                      />
+                    </div>
+                  ),
+                }}
+                toolbar={{ buttons: ["close"] }} // Zeigt nur das Schließen-X oben rechts
+                controller={{ closeOnBackdropClick: true }} // Schließen durch Klick daneben
+                styles={{
+                  container: { backgroundColor: "rgba(0, 0, 0, .4)" },
+                }}
+              />
+            </div>
           )}
 
           {tabContent.codeExamples && (
