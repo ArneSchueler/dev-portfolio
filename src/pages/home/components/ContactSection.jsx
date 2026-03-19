@@ -24,11 +24,13 @@ function renderContactInfo(items) {
       {items.map(({ id, title, link }) => {
         return (
           <a
+            key={id}
             href={id === "email" ? `mailto:${link}` : `https://www.${link}`}
             target="_blank"
           >
             <li key={id} className="border-s-2 border-cyan-500 ps-2">
               <h3>{title}</h3>
+
               <p>{link}</p>
             </li>
           </a>

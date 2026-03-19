@@ -101,7 +101,7 @@ export default function Home({ setActiveSection }) {
     >
       <section
         id="hero"
-        className="box-border flex snap-start flex-col items-center py-40 text-slate-950 sm:min-h-screen"
+        className="box-border flex snap-start flex-col items-center pt-18 text-slate-950 sm:min-h-screen sm:py-40"
       >
         <HeroSection />
       </section>
@@ -115,7 +115,7 @@ export default function Home({ setActiveSection }) {
 
       <section
         id="about"
-        className="box-border flex snap-start flex-col items-center py-40 text-slate-950 sm:min-h-screen"
+        className="box-border flex snap-start flex-col items-center text-slate-950 sm:min-h-screen sm:py-40"
       >
         <AboutSection></AboutSection>
       </section>

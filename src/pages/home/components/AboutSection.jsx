@@ -41,11 +41,16 @@ function renderContent(content) {
   } else if (type === "items") {
     return (
       <ul className="flex flex-col gap-6">
-        {content.body.items.map(({ title, text }) => {
+        {content.body.items.map(({ title, text }, index) => {
           return (
-            <li className="border-s-2 border-cyan-500 ps-2">
-              <h3>{title}</h3>
-              <p>{text}</p>
+            <li key={index} className="flex items-start gap-4">
+              <span className="shrink-0 text-xl font-bold text-cyan-500">
+                /
+              </span>
+              <div className="flex flex-col gap-1">
+                <h3 className="text-lg font-bold">{title}</h3>
+                <p className="leading-snug text-slate-700">{text}</p>
+              </div>
             </li>
           );
         })}

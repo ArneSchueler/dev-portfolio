@@ -37,7 +37,7 @@ export function ProjectDetail() {
   const behance = links.find((link) => link.type === "behance")?.href;
 
   return (
-    <main className="flex h-fit min-h-screen flex-col p-6 py-40 sm:ms-40 sm:px-40 sm:pt-40 md:ms-30">
+    <main className="flex h-fit min-h-screen w-full flex-col p-6 py-20 sm:ms-40 sm:px-40 sm:pt-40 md:ms-30">
       <div className="grid items-start justify-center gap-x-20 gap-y-12 p-6 lg:max-w-400 2xl:grid-cols-[minmax(550px,2fr)_3fr]">
         <div className="flex flex-col items-center gap-6 sm:items-start lg:col-start-1">
           <nav
@@ -66,7 +66,7 @@ export function ProjectDetail() {
               {behance && <Button {...behanceBtn} route={behance} />}
             </div>
           </nav>
-          <h1 className="text-display text-font-bold text-black sm:text-left">
+          <h1 className="text-display text-font-bold text-center text-black sm:text-left">
             {project.header.title}
           </h1>
         </div>
