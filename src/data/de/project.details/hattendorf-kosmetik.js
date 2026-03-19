@@ -41,7 +41,12 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "challenge",
-      media: { src: null, alt: "Hattendorf Herausforderung" },
+      media: {
+        src: null,
+        caption:
+          "Analyse des bisherigen Template-Layouts und seiner starren Einschränkungen",
+        alt: "Hattendorf Herausforderung",
+      },
       intro:
         "Die bestehende Template-Struktur schränkte Gestaltungsspielraum und Professionalität ein.",
       bullets: [
@@ -52,7 +57,12 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "process",
-      media: { src: null, alt: "Hattendorf Prozess" },
+      media: {
+        src: null,
+        caption:
+          "Neuaufbau der Informationshierarchie und visuelle Prototyping-Phasen",
+        alt: "Hattendorf Prozess",
+      },
       intro:
         "Analyse, Wireframes und Prototyping definierten die neue Gestaltungsrichtung.",
       bullets: [
@@ -63,7 +73,12 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "solution",
-      media: { src: null, alt: "Hattendorf Lösung" },
+      media: {
+        src: null,
+        caption:
+          "Minimalistisches Redesign mit Fokus auf Weißraum und Premium-Branding",
+        alt: "Hattendorf Lösung",
+      },
       intro:
         "Minimalistisches Layout mit Weißraum und strukturierten Komponenten zur Vertrauenssteigerung.",
       bullets: [
@@ -74,7 +89,12 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "results",
-      media: { src: null, alt: "Hattendorf Ergebnisse" },
+      media: {
+        src: null,
+        caption:
+          "Finales Interface, das hohe wahrgenommene Qualität und Vertrauen vermittelt",
+        alt: "Hattendorf Ergebnisse",
+      },
       intro:
         "Ein kohärentes Redesign mit stärkerem Vertrauen und höherer Klarheit.",
       bullets: [

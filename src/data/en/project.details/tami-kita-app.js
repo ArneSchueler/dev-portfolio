@@ -45,7 +45,11 @@ export const TAMI_KITA_APP_DETAIL = {
 
     {
       id: "challenge",
-      media: { src: null, alt: "Tami challenge context" },
+      media: {
+        src: null,
+        caption: "Mapping of daily communication challenges in childcare",
+        alt: "Tami challenge context",
+      },
       intro:
         "Daily communication in childcare environments is time-sensitive, fragmented, and often handled through inefficient channels.",
       bullets: [
@@ -58,7 +62,12 @@ export const TAMI_KITA_APP_DETAIL = {
 
     {
       id: "process",
-      media: { src: null, alt: "Tami research and personas" },
+      media: {
+        src: null,
+        caption:
+          "Personas and usage scenarios from the Human-Centered Design process",
+        alt: "Tami research and personas",
+      },
       intro:
         "The concept was developed through a structured Human-Centered Design process based on research and validated scenarios.",
       bullets: [
@@ -71,7 +80,12 @@ export const TAMI_KITA_APP_DETAIL = {
 
     {
       id: "solution",
-      media: { src: null, alt: "Tami interface concept" },
+      media: {
+        src: null,
+        caption:
+          "Accessible interface concept with flat information architecture",
+        alt: "Tami interface concept",
+      },
       intro:
         "A flat information architecture combined with accessibility-first design principles improves clarity and task efficiency.",
       bullets: [
@@ -84,7 +98,12 @@ export const TAMI_KITA_APP_DETAIL = {
 
     {
       id: "results",
-      media: { src: null, alt: "Tami evaluation results" },
+      media: {
+        src: null,
+        caption:
+          "Evaluation results showing improved clarity and routine efficiency",
+        alt: "Tami evaluation results",
+      },
       intro:
         "Evaluation indicates strong acceptance and improved clarity in everyday childcare coordination tasks.",
       bullets: [

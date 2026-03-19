@@ -45,7 +45,11 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "goal",
-      media: { src: null, alt: "VR goal" },
+      media: {
+        src: null,
+        caption: "Mapping interaction flow for first-time VR users",
+        alt: "VR goal",
+      },
       intro: "Intuitive interactions for first-time Virtual Reality users.",
       bullets: [
         "Reduction of confusion through clear affordances",
@@ -55,7 +59,12 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "implementation",
-      media: { src: null, alt: "VR implementation" },
+      media: {
+        src: null,
+        caption:
+          "Grab, teleport, and socket interaction implementations in Unity",
+        alt: "VR implementation",
+      },
       intro:
         "Implementation of grabbing, placing, teleporting, and guided logic.",
       bullets: [
@@ -66,7 +75,11 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "tech",
-      media: { src: null, alt: "VR tech stack" },
+      media: {
+        src: null,
+        caption: "Scene hierarchy and state-driven workflow logic structure",
+        alt: "VR tech stack",
+      },
       intro:
         "Structured scene hierarchy and XR interaction systems ensure maintainability.",
       bullets: [
@@ -77,7 +90,11 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "results",
-      media: { src: null, alt: "VR results" },
+      media: {
+        src: null,
+        caption: "Completed interaction cycle demonstrating guided user tasks",
+        alt: "VR results",
+      },
       intro: "Complete interaction cycle with clear user guidance.",
       bullets: [
         "Faster understanding of the task flow",

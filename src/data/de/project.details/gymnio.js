@@ -48,7 +48,12 @@ export const GYMNIO_DETAIL = {
     },
     {
       id: "challenge",
-      media: { src: gymnioOnboarding, alt: "Gymnio Herausforderung" },
+      media: {
+        src: gymnioOnboarding,
+        caption:
+          "Onboarding-Flow zur Erfassung von Nutzerzielen und Fitnesslevel",
+        alt: "Gymnio Herausforderung",
+      },
       intro:
         "Die größte Hürde moderner Fitness-Apps ist der Informations-Overload. Viele Apps bieten zwar viele Daten, aber keine klare Orientierung. Die Herausforderung war es, ein Dashboard zu entwickeln, das sowohl für Einsteiger als auch für Fortgeschrittene funktioniert und personalisierte Ziele greifbar macht.",
       bullets: [
@@ -59,7 +64,12 @@ export const GYMNIO_DETAIL = {
     },
     {
       id: "process",
-      media: { src: gymnioWireframe, alt: "Gymnio Prozess" },
+      media: {
+        src: gymnioWireframe,
+        caption:
+          "Low-Fidelity-Wireframes zur Erkundung modularer Layout-Strukturen",
+        alt: "Gymnio Prozess",
+      },
       intro:
         "Der Prozess war darauf ausgerichtet, ein systematisches Design-Framework aufzubauen. Von der ersten Strukturierung der Informationshierarchie bis hin zum fertigen High-Fidelity-System stand die Benutzerführung im Vordergrund.",
       bullets: [
@@ -70,7 +80,11 @@ export const GYMNIO_DETAIL = {
     },
     {
       id: "solution",
-      media: { src: gymnioUserFlow, alt: "Gymnio Lösung" },
+      media: {
+        src: gymnioUserFlow,
+        caption: "Detaillierte User-Flow-Map für die Dashboard-Anpassung",
+        alt: "Gymnio Lösung",
+      },
       intro:
         "Die Lösung ist ein anpassbares Dashboard, das sich dem Nutzer anpasst. Ein durchdachter Flow ermöglicht es, zwischen der groben Übersicht und detaillierten Performance-Daten nahtlos zu wechseln, während die KI den Prozess moderiert.",
       bullets: [
@@ -81,7 +95,12 @@ export const GYMNIO_DETAIL = {
     },
     {
       id: "results",
-      media: { src: gymnioDesignSystem, alt: "Gymnio Ergebnisse" },
+      media: {
+        src: gymnioDesignSystem,
+        caption:
+          "Umfassendes Design-System zur Gewährleistung der UI-Konsistenz",
+        alt: "Gymnio Ergebnisse",
+      },
       intro:
         "Gymnio zeigt, wie modulares Design und KI die Nutzererfahrung transformieren können. Das Ergebnis ist eine Plattform, die Komplexität reduziert und durch visuelles Feedback die Bindung an die sportlichen Ziele stärkt.",
       bullets: [

@@ -42,7 +42,12 @@ export const TAMI_KITA_APP_DETAIL = {
     },
     {
       id: "challenge",
-      media: { src: null, alt: "Tami Herausforderung" },
+      media: {
+        src: null,
+        caption:
+          "Darstellung der täglichen Kommunikationsherausforderungen in der Kita",
+        alt: "Tami Herausforderung",
+      },
       intro:
         "Kommunikation im Kita-Alltag ist zeitkritisch, fragmentiert und häufig ineffizient organisiert.",
       bullets: [
@@ -54,7 +59,12 @@ export const TAMI_KITA_APP_DETAIL = {
     },
     {
       id: "process",
-      media: { src: null, alt: "Tami Prozess" },
+      media: {
+        src: null,
+        caption:
+          "Personas und Nutzungsszenarien aus dem Human-Centered-Design-Prozess",
+        alt: "Tami Prozess",
+      },
       intro:
         "Strukturierter Human-Centered-Design-Prozess mit validierten Nutzungsszenarien.",
       bullets: [
@@ -66,7 +76,12 @@ export const TAMI_KITA_APP_DETAIL = {
     },
     {
       id: "solution",
-      media: { src: null, alt: "Tami Lösung" },
+      media: {
+        src: null,
+        caption:
+          "Barrierefreies Interface-Konzept mit flacher Informationsarchitektur",
+        alt: "Tami Lösung",
+      },
       intro:
         "Flache Informationsarchitektur kombiniert mit barrierefreiem Designansatz.",
       bullets: [
@@ -78,7 +93,12 @@ export const TAMI_KITA_APP_DETAIL = {
     },
     {
       id: "results",
-      media: { src: null, alt: "Tami Ergebnisse" },
+      media: {
+        src: null,
+        caption:
+          "Evaluierungsergebnisse, die eine verbesserte Klarheit und Routine-Effizienz belegen",
+        alt: "Tami Ergebnisse",
+      },
       intro: "Positive Evaluation mit verbesserter Klarheit im Alltag.",
       bullets: [
         "Positives Feedback zur Struktur",

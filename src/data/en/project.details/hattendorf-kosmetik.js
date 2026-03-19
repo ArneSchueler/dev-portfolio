@@ -43,7 +43,12 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "challenge",
-      media: { src: null, alt: "Hattendorf challenge" },
+      media: {
+        src: null,
+        caption:
+          "Analysis of the previous template layout and its rigid constraints",
+        alt: "Hattendorf challenge",
+      },
       intro:
         "Previous template restricted structure and reduced perceived professionalism.",
       bullets: [
@@ -54,7 +59,11 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "process",
-      media: { src: null, alt: "Hattendorf process" },
+      media: {
+        src: null,
+        caption: "Rebuilt information hierarchy and visual prototyping phases",
+        alt: "Hattendorf process",
+      },
       intro:
         "Research, wireframes, and prototyping guided the redesign direction.",
       bullets: [
@@ -65,7 +74,12 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "solution",
-      media: { src: null, alt: "Hattendorf solution" },
+      media: {
+        src: null,
+        caption:
+          "Minimalist redesign focusing on whitespace and premium branding",
+        alt: "Hattendorf solution",
+      },
       intro:
         "A minimal layout using whitespace and structured components to increase trust.",
       bullets: [
@@ -76,7 +90,11 @@ export const HATTENDORF_DETAIL = {
     },
     {
       id: "results",
-      media: { src: null, alt: "Hattendorf results" },
+      media: {
+        src: null,
+        caption: "Final interface conveying high perceived quality and trust",
+        alt: "Hattendorf results",
+      },
       intro: "A coherent redesign strengthening trust and clarity.",
       bullets: [
         "Improved usability",

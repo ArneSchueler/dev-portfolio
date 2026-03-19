@@ -45,7 +45,11 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "goal",
-      media: { src: null, alt: "VR Ziel" },
+      media: {
+        src: null,
+        caption: "Darstellung des Interaktionsflusses für VR-Erstnutzer",
+        alt: "VR Ziel",
+      },
       intro: "Intuitive Interaktionen für Erstnutzer von Virtual Reality.",
       bullets: [
         "Reduktion von Verwirrung durch klare Affordanzen",
@@ -55,7 +59,12 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "implementation",
-      media: { src: null, alt: "VR Umsetzung" },
+      media: {
+        src: null,
+        caption:
+          "Implementierung von Greif-, Teleport- und Socket-Interaktionen in Unity",
+        alt: "VR Umsetzung",
+      },
       intro:
         "Implementierung von Greifen, Platzieren, Teleportieren und geführter Logik.",
       bullets: [
@@ -66,7 +75,12 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "tech",
-      media: { src: null, alt: "VR Tech Stack" },
+      media: {
+        src: null,
+        caption:
+          "Szenenhierarchie und zustandsgesteuerte Workflow-Logik-Struktur",
+        alt: "VR Tech Stack",
+      },
       intro:
         "Strukturierte Szenenhierarchie und XR-Interaktionssysteme sichern Wartbarkeit.",
       bullets: [
@@ -77,7 +91,12 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     },
     {
       id: "results",
-      media: { src: null, alt: "VR Ergebnisse" },
+      media: {
+        src: null,
+        caption:
+          "Vollständiger Interaktionszyklus, der geführte Nutzeraufgaben demonstriert",
+        alt: "VR Ergebnisse",
+      },
       intro: "Vollständiger Interaktionszyklus mit klarer Nutzerführung.",
       bullets: [
         "Schnelleres Verständnis des Aufgabenflusses",

@@ -54,7 +54,11 @@ export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
     },
     {
       id: "goal",
-      media: { src: goalImg, alt: "Ziel und Positionierung des Portfolios" },
+      media: {
+        src: goalImg,
+        caption: "Projektübersicht von schueler.dev",
+        alt: "Ziel und Positionierung des Portfolios",
+      },
       intro:
         "Das Portfolio wurde entwickelt, um meine Art zu arbeiten sichtbar zu machen und Unternehmen eine fundierte Entscheidungshilfe zu geben.",
       bullets: [
@@ -67,6 +71,7 @@ export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
       id: "implementation",
       media: {
         src: implementationImg,
+        caption: "Daten und Ordnerstruktur des Portfolios",
         alt: "Struktur und Aufbau des Portfolio-Projekts",
       },
       intro:
@@ -126,6 +131,7 @@ useEffect(() => {
       id: "results",
       media: {
         src: resultsImg,
+        caption: "Finale responsive Oberfläche mit Projektdetails",
         alt: "Ergebnis und Weiterentwicklung des Portfolios",
       },
       intro:
