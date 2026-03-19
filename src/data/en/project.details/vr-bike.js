@@ -8,7 +8,7 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     ],
     title: "VR Bicycle Workshop",
     subtitle:
-      "An interactive VR workshop prototype focused on immersion and structured interaction.",
+      "Interactive VR workshop prototype focusing on immersion and structured interaction.",
     links: [
       {
         type: "external",
@@ -35,43 +35,42 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
         { label: "Focus", value: "Interaction Design in VR" },
         { label: "Year", value: "2023" },
       ],
-      heading:
-        "A VR prototype simulating a structured bicycle repair workshop environment.",
+      intro:
+        "VR prototype for simulating a structured bicycle repair workshop.",
       bullets: [
         "Focus on immersion and guided interaction",
-        "Clear spatial structure and navigation",
-        "Prototype built for validating XR interaction patterns",
+        "Clear spatial structure",
+        "Validation of XR interaction patterns",
       ],
     },
     {
       id: "goal",
-      media: { src: null, alt: "VR goals" },
-      heading:
-        "Design intuitive interactions that feel natural even for first-time VR users.",
+      media: { src: null, alt: "VR goal" },
+      intro: "Intuitive interactions for first-time Virtual Reality users.",
       bullets: [
-        "Reduce confusion through clear affordances",
-        "Step-based interaction flow",
-        "Maintain consistent interaction rules",
+        "Reduction of confusion through clear affordances",
+        "Step-based task flow",
+        "Consistent interaction rules",
       ],
     },
     {
       id: "implementation",
       media: { src: null, alt: "VR implementation" },
-      heading:
-        "Interaction patterns implemented for grabbing, placing, teleporting, and guided task logic.",
+      intro:
+        "Implementation of grabbing, placing, teleporting, and guided logic.",
       bullets: [
         "Teleport navigation system",
-        "Grab and socket-based interactions",
-        "Conditional task progression logic",
+        "Grab and socket interactions",
+        "State-based task logic",
       ],
     },
     {
       id: "tech",
       media: { src: null, alt: "VR tech stack" },
-      heading:
-        "XR interaction systems and structured scene hierarchy ensure maintainability.",
+      intro:
+        "Structured scene hierarchy and XR interaction systems ensure maintainability.",
       bullets: [
-        "XR toolkit interaction handling",
+        "XR Toolkit interaction handling",
         "State-driven workflow logic",
         "Organized scene structure",
       ],
@@ -79,12 +78,11 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "VR results" },
-      heading:
-        "A complete interactive loop demonstrating clear guidance and immersive interaction.",
+      intro: "Complete interaction cycle with clear user guidance.",
       bullets: [
-        "Users understand task flow faster",
-        "Constraints reduce interaction errors",
-        "Learning: clarity beats visual complexity",
+        "Faster understanding of the task flow",
+        "Reduced interaction errors through constraints",
+        "Learning: Clarity beats visual complexity",
       ],
     },
   ],

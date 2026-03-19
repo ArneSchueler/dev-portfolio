@@ -1,4 +1,8 @@
 import overviewImg from "../../../assets/images/dev-portfolio/schueler-dev-overview.png";
+import goalImg from "../../../assets/images/dev-portfolio/schueler-dev-goal.png";
+import implementationImg from "../../../assets/images/dev-portfolio/schueler-dev-implementation.png";
+import resultsImg from "../../../assets/images/dev-portfolio/schueler-dev-results.png";
+
 export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
   slug: "schueler-dev-portfolio",
 
@@ -7,10 +11,9 @@ export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
       { label: "Selected", route: "/projects" },
       { label: "schueler.dev" },
     ],
-
     title: "schueler.dev",
     subtitle:
-      "A portfolio built as a scalable system—UX decisions and code structure treated as one.",
+      "Personal portfolio to showcase my work as a frontend developer with a UX focus and selected projects.",
     links: [
       { type: "github", href: "https://github.com/ArneSchueler/dev-portfolio" },
       { type: "external", href: "https://schueler.dev" },
@@ -28,63 +31,109 @@ export const SCHUELER_DEV_PORTFOLIO_DETAIL = {
   content: [
     {
       id: "overview",
-      media: { src: overviewImg, alt: "Portfolio overview" },
+      media: {
+        src: overviewImg,
+        alt: "Start view of the portfolio schueler.dev",
+      },
       chips: [
-        { label: "Role", value: "Frontend / UX" },
-        { label: "Stack", value: "React, Vite, Tailwind" },
-        { label: "Focus", value: "Structure, Accessibility" },
-        { label: "Year", value: "2025" },
+        {
+          label: "Role",
+          value: "UX Concept, UI Design, Frontend Development",
+        },
+        { label: "Stack", value: "React, Vite, Tailwind CSS, React Router" },
+        { label: "Focus", value: "Structure, Clarity, Accessibility" },
+        { label: "Timeframe", value: "February 2026" },
       ],
-      heading:
-        "A minimal portfolio optimized for fast scanning and structured case study presentation.",
+      intro:
+        "Personal portfolio designed for a clear presentation of my workflow, selected projects, and UX-oriented frontend development.",
       bullets: [
-        "Clear hierarchy and predictable navigation",
-        "Tab-based detail pages for structured depth",
-        "Projects rendered from structured data objects",
+        "Minimalist, app-like interface featuring a sidebar instead of a classic top navigation",
+        "Fast orientation for recruiters through a clear information hierarchy",
+        "Project content is presented in a structured and traceable manner",
       ],
     },
     {
       id: "goal",
-      media: { src: null, alt: "Portfolio goals" },
-      heading:
-        "Build a maintainable system that allows adding new projects without refactoring UI.",
+      media: { src: goalImg, alt: "Goal and positioning of the portfolio" },
+      intro:
+        "The portfolio was developed to make my way of working visible and provide companies with a well-founded basis for decision-making.",
       bullets: [
-        "Consistent structure across all projects",
-        "Separation of listing and detail data",
-        "Accessibility and semantic structure as defaults",
+        "Presentation of my projects, skills, and working methods in a clear structure",
+        "Positioning as a frontend developer with a UX focus and interdisciplinary thinking",
+        "Differentiation from generic portfolio sites through reduced navigation and a stronger app character",
       ],
     },
     {
       id: "implementation",
-      media: { src: null, alt: "Portfolio implementation" },
-      heading:
-        "Reusable UI components and slug-based routing power a scalable project system.",
+      media: {
+        src: implementationImg,
+        alt: "Structure and architecture of the portfolio project",
+      },
+      intro:
+        "The site combines an almost single-page-like navigation with separate project detail pages for more in-depth content.",
       bullets: [
-        "Dynamic rendering via project slug",
-        "Tab content resolved via id matching",
-        "Optional fields handled without layout breaks",
+        "Sections on the main page are accessed via a sidebar",
+        "Project pages use tabs for a compact and organized presentation",
+        "Project data is stored in structured configuration files and loaded dynamically via slugs",
       ],
     },
     {
       id: "tech",
-      media: { src: null, alt: "Portfolio tech stack" },
-      heading:
-        "A modular frontend stack focused on maintainability and clarity.",
+      // media: { src: techImg, alt: "Technical architecture of the portfolio" },
+      intro:
+        "The technical architecture is modular, component-based, and designed for easy extensibility.",
       bullets: [
-        "React + Vite setup",
+        "React and Vite for a highly performant frontend setup",
         "React Router for slug-based detail pages",
-        "Tailwind for consistent spacing and typography",
+        "Tailwind CSS for consistent spacing, typography, and reusable UI patterns",
+        "Multilingual content structure and observer-based navigation logic",
+      ],
+      codeExamples: [
+        {
+          title: "Scroll Logic & History API",
+          code: `// Synchronizes scroll position with URL and sidebar status
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      // Selects the section with the largest visible area
+      const visibleSection = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visibleSection) {
+        const sectionId = visibleSection.target.id;
+        setActiveSection(sectionId);
+        
+        // Update URL without reload (for deep linking)
+        const nextUrl = sectionId === "hero" ? "/" : \`/\${sectionId}\`;
+        window.history.replaceState(null, "", nextUrl);
+      }
+    },
+    { threshold: 0.6 }
+  );
+
+  sectionIds.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) observer.observe(element);
+  });
+
+  return () => observer.disconnect();
+}, []);`,
+        },
       ],
     },
     {
       id: "results",
-      media: { src: null, alt: "Portfolio results" },
-      heading:
-        "A consistent and extensible portfolio system ready for future projects.",
+      media: {
+        src: resultsImg,
+        alt: "Result and future development of the portfolio",
+      },
+      intro:
+        "The result is an extensible portfolio system that consistently brings together design, content, and technical structure.",
       bullets: [
-        "Improved scalability through data modeling",
-        "Stable interaction logic for tabs",
-        "Reduced technical debt through structure",
+        "Clear presentation of my role between UX, UI, and frontend development",
+        "Solid foundation for gradually adding further projects and case studies",
+        "Planned future developments include Dark Mode and improved responsiveness",
       ],
     },
   ],

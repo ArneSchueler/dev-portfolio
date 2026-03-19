@@ -29,7 +29,7 @@ export const GYMNIO_DETAIL = {
         { label: "Fokus", value: "Dashboard Design" },
         { label: "Jahr", value: "2025" },
       ],
-      heading:
+      intro:
         "Konzept für ein modulares Fitness-Dashboard zur Unterstützung von Klarheit und Motivation.",
       bullets: [
         "Training, Ernährung und Fortschritt vereint",
@@ -40,7 +40,7 @@ export const GYMNIO_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Gymnio Herausforderung" },
-      heading:
+      intro:
         "Viele Fitness-Apps überfordern Nutzende und fragmentieren zentrale Informationen.",
       bullets: [
         "Verstreute Inhalte und Navigation",
@@ -51,7 +51,7 @@ export const GYMNIO_DETAIL = {
     {
       id: "process",
       media: { src: null, alt: "Gymnio Prozess" },
-      heading:
+      intro:
         "Iteratives Design von Low-Fidelity-Strukturen hin zu einem High-Fidelity-System.",
       bullets: [
         "Lo-Fi Layout-Exploration",
@@ -62,7 +62,7 @@ export const GYMNIO_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Gymnio Lösung" },
-      heading:
+      intro:
         "Ein strukturiertes Dashboard verbindet Ziele, Trainingspläne und Fortschritt transparent.",
       bullets: [
         "Modulares Widget-System",
@@ -73,7 +73,7 @@ export const GYMNIO_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "Gymnio Ergebnisse" },
-      heading:
+      intro:
         "Ein konsistentes Konzept mit erhöhter Klarheit und wahrgenommener Motivation.",
       bullets: [
         "Verbesserte Orientierung",

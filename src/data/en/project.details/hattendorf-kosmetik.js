@@ -33,7 +33,7 @@ export const HATTENDORF_DETAIL = {
         { label: "Tools", value: "Figma" },
         { label: "Year", value: "2025" },
       ],
-      heading:
+      intro:
         "Redesign focused on clarity, calm composition, and premium brand perception.",
       bullets: [
         "Improved visual hierarchy",
@@ -44,7 +44,7 @@ export const HATTENDORF_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Hattendorf challenge" },
-      heading:
+      intro:
         "Previous template restricted structure and reduced perceived professionalism.",
       bullets: [
         "Rigid layout constraints",
@@ -55,7 +55,7 @@ export const HATTENDORF_DETAIL = {
     {
       id: "process",
       media: { src: null, alt: "Hattendorf process" },
-      heading:
+      intro:
         "Research, wireframes, and prototyping guided the redesign direction.",
       bullets: [
         "Audit of existing content",
@@ -66,7 +66,7 @@ export const HATTENDORF_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Hattendorf solution" },
-      heading:
+      intro:
         "A minimal layout using whitespace and structured components to increase trust.",
       bullets: [
         "Clear service navigation",
@@ -77,7 +77,7 @@ export const HATTENDORF_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "Hattendorf results" },
-      heading: "A coherent redesign strengthening trust and clarity.",
+      intro: "A coherent redesign strengthening trust and clarity.",
       bullets: [
         "Improved usability",
         "Higher perceived quality",

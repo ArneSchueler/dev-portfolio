@@ -4,7 +4,6 @@ export const FRONTEND_SHOWCASE_DETAIL = {
   slug: "frontend-showcase",
 
   header: {
-    breadcrumb: "UX / Frontend Showcase",
     breadcrumb: [
       { label: "UX", route: "/projects" },
       { label: "Frontend Showcase" },
@@ -30,7 +29,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "overview",
       media: { src: null, alt: "Showcase overview" },
-      heading:
+      intro:
         "Dashboard concept reducing cognitive load in complex real-time systems.",
       bullets: [
         "Focus on clarity and anomaly detection",
@@ -41,7 +40,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Showcase challenge" },
-      heading: "Existing dashboards overwhelmed users with dense information.",
+      intro: "Existing dashboards overwhelmed users with dense information.",
       bullets: [
         "High cognitive load",
         "Unclear prioritization",
@@ -51,8 +50,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "process",
       media: { src: null, alt: "Showcase process" },
-      heading:
-        "Iterative UX process with structured evaluation and refinement.",
+      intro: "Iterative UX process with structured evaluation and refinement.",
       bullets: [
         "Low to high fidelity prototyping",
         "User-centered validation",
@@ -62,7 +60,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Showcase solution" },
-      heading:
+      intro:
         "Clear visual hierarchy and consistent encoding improve orientation and speed.",
       bullets: [
         "Color-coded status logic",
@@ -73,8 +71,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "Showcase results" },
-      heading:
-        "Evaluation showed improved efficiency and reduced mental effort.",
+      intro: "Evaluation showed improved efficiency and reduced mental effort.",
       bullets: [
         "Positive evaluation results",
         "Improved anomaly recognition",

@@ -97,7 +97,7 @@ export default function Home({ setActiveSection }) {
   return (
     <main
       ref={containerRef}
-      className="flex h-screen flex-col overflow-y-scroll p-6 sm:ms-40 sm:p-40 md:ms-30 md:snap-y md:snap-mandatory"
+      className="flex h-screen flex-col overflow-y-scroll p-6 sm:py-[clamp(5rem,10vh,15rem)] sm:ps-[clamp(9rem,15vw,17rem)] sm:pe-[clamp(2rem,5vw,8rem)] md:snap-y md:snap-mandatory"
     >
       <section
         id="hero"

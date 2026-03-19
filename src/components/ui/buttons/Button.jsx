@@ -36,7 +36,7 @@ export const githubBtn = {
   icon: "ph:github-logo-light",
   ariaLabel: "GitHub Repository öffnen",
   route: "",
-  className: `w-fit p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
+  className: `w-fit h-fit aspect-1 p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
   isExternal: true,
 };
 
@@ -45,7 +45,7 @@ export const redirectBtn = {
   icon: "ph:arrow-square-out-light",
   ariaLabel: "Link öffnen",
   route: "",
-  className: `w-fit p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
+  className: `w-fit h-fit aspect-1 p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
   isExternal: true,
 };
 export const behanceBtn = {
@@ -53,7 +53,7 @@ export const behanceBtn = {
   icon: "ph:behance-logo-light",
   ariaLabel: "Behance Projekt öffnen",
   route: "",
-  className: `w-fit p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
+  className: `w-fit h-fit aspect-1 p-2 bg-slate-500/10 rounded-full shadow transition hover:bg-slate-500/20 hover:text-cyan-500`,
   isExternal: true,
 };
 

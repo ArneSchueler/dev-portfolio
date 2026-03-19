@@ -7,7 +7,7 @@ export const GYMNIO_DETAIL = {
     breadcrumb: [{ label: "UX", route: "/projects" }, { label: "Gymnio" }],
     title: "Gymnio — AI Fitness Coach",
     subtitle:
-      "A dashboard concept unifying training, nutrition, and coaching into one experience.",
+      "Dashboard concept consolidating training, nutrition, and coaching into one single application.",
     links: [{ type: "behance", href: "https://github.com/placeholder/gymnio" }],
   },
 
@@ -29,10 +29,10 @@ export const GYMNIO_DETAIL = {
         { label: "Focus", value: "Dashboard Design" },
         { label: "Year", value: "2025" },
       ],
-      heading:
-        "Concept for a modular fitness dashboard supporting clarity and motivation.",
+      intro:
+        "Concept for a modular fitness dashboard to support clarity and motivation.",
       bullets: [
-        "Training, nutrition, and progress unified",
+        "Training, nutrition, and progress united",
         "Clear visual hierarchy",
         "Modular dashboard structure",
       ],
@@ -40,19 +40,19 @@ export const GYMNIO_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Gymnio challenge" },
-      heading:
-        "Fitness apps often overload users and fragment key information.",
+      intro:
+        "Many fitness apps overwhelm users and fragment essential information.",
       bullets: [
         "Scattered content and navigation",
         "Low motivation due to unclear progress",
-        "Missing structural clarity",
+        "Lack of structural clarity",
       ],
     },
     {
       id: "process",
       media: { src: null, alt: "Gymnio process" },
-      heading:
-        "Iterative design from low-fidelity structure to high-fidelity modular system.",
+      intro:
+        "Iterative design shifting from low-fidelity structures to a high-fidelity system.",
       bullets: [
         "Lo-Fi layout exploration",
         "Interaction refinement",
@@ -62,23 +62,23 @@ export const GYMNIO_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Gymnio solution" },
-      heading:
-        "A structured dashboard that connects goals, plans, and progress transparently.",
+      intro:
+        "A structured dashboard transparently connects goals, training plans, and progress.",
       bullets: [
         "Modular widget system",
         "Clear feedback loops",
-        "Unified user flow",
+        "Coherent user flow",
       ],
     },
     {
       id: "results",
       media: { src: null, alt: "Gymnio results" },
-      heading:
-        "A coherent concept increasing clarity and perceived motivation.",
+      intro:
+        "A consistent concept with increased clarity and perceived motivation.",
       bullets: [
         "Improved orientation",
         "Higher transparency",
-        "Learning: structure drives engagement",
+        "Learning: Structure drives engagement",
       ],
     },
   ],

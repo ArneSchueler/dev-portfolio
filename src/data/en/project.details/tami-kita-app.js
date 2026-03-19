@@ -33,7 +33,7 @@ export const TAMI_KITA_APP_DETAIL = {
         { label: "Focus", value: "Accessibility & Daily Usability" },
         { label: "Year", value: "2024" },
       ],
-      heading:
+      intro:
         "Tami is a childcare app concept designed to simplify communication and coordination between parents and educators in everyday kindergarten routines.",
       bullets: [
         "Centralized platform for messages, absences, and appointments",
@@ -46,7 +46,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Tami challenge context" },
-      heading:
+      intro:
         "Daily communication in childcare environments is time-sensitive, fragmented, and often handled through inefficient channels.",
       bullets: [
         "Absence reporting is often handled by phone calls",
@@ -59,7 +59,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "process",
       media: { src: null, alt: "Tami research and personas" },
-      heading:
+      intro:
         "The concept was developed through a structured Human-Centered Design process based on research and validated scenarios.",
       bullets: [
         "Online survey to identify needs and pain points",
@@ -72,7 +72,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Tami interface concept" },
-      heading:
+      intro:
         "A flat information architecture combined with accessibility-first design principles improves clarity and task efficiency.",
       bullets: [
         "Each core function has a dedicated, predictable section",
@@ -85,7 +85,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "Tami evaluation results" },
-      heading:
+      intro:
         "Evaluation indicates strong acceptance and improved clarity in everyday childcare coordination tasks.",
       bullets: [
         "Positive feedback on usability and structure",

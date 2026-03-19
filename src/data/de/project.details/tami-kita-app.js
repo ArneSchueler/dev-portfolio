@@ -31,7 +31,7 @@ export const TAMI_KITA_APP_DETAIL = {
         { label: "Fokus", value: "Barrierefreiheit & Alltagstauglichkeit" },
         { label: "Jahr", value: "2024" },
       ],
-      heading:
+      intro:
         "Tami ist ein App-Konzept zur strukturierten Organisation von Kommunikation und Abläufen im Kita-Alltag.",
       bullets: [
         "Zentrale Plattform für Nachrichten, Abwesenheiten und Termine",
@@ -43,7 +43,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Tami Herausforderung" },
-      heading:
+      intro:
         "Kommunikation im Kita-Alltag ist zeitkritisch, fragmentiert und häufig ineffizient organisiert.",
       bullets: [
         "Krankmeldungen erfolgen oft telefonisch",
@@ -55,7 +55,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "process",
       media: { src: null, alt: "Tami Prozess" },
-      heading:
+      intro:
         "Strukturierter Human-Centered-Design-Prozess mit validierten Nutzungsszenarien.",
       bullets: [
         "Online-Umfrage zur Bedarfserhebung",
@@ -67,7 +67,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Tami Lösung" },
-      heading:
+      intro:
         "Flache Informationsarchitektur kombiniert mit barrierefreiem Designansatz.",
       bullets: [
         "Jede Kernfunktion besitzt einen klar definierten Bereich",
@@ -79,7 +79,7 @@ export const TAMI_KITA_APP_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "Tami Ergebnisse" },
-      heading: "Positive Evaluation mit verbesserter Klarheit im Alltag.",
+      intro: "Positive Evaluation mit verbesserter Klarheit im Alltag.",
       bullets: [
         "Positives Feedback zur Struktur",
         "Reduzierter wahrgenommener Aufwand",

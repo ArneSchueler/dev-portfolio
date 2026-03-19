@@ -35,7 +35,7 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
         { label: "Fokus", value: "Interaktionsdesign in VR" },
         { label: "Jahr", value: "2023" },
       ],
-      heading:
+      intro:
         "VR-Prototyp zur Simulation einer strukturierten Fahrradwerkstatt.",
       bullets: [
         "Fokus auf Immersion und geführte Interaktion",
@@ -46,7 +46,7 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     {
       id: "goal",
       media: { src: null, alt: "VR Ziel" },
-      heading: "Intuitive Interaktionen für Erstnutzer von Virtual Reality.",
+      intro: "Intuitive Interaktionen für Erstnutzer von Virtual Reality.",
       bullets: [
         "Reduktion von Verwirrung durch klare Affordanzen",
         "Schrittbasierter Aufgabenfluss",
@@ -56,7 +56,7 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     {
       id: "implementation",
       media: { src: null, alt: "VR Umsetzung" },
-      heading:
+      intro:
         "Implementierung von Greifen, Platzieren, Teleportieren und geführter Logik.",
       bullets: [
         "Teleport-Navigationssystem",
@@ -67,7 +67,7 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     {
       id: "tech",
       media: { src: null, alt: "VR Tech Stack" },
-      heading:
+      intro:
         "Strukturierte Szenenhierarchie und XR-Interaktionssysteme sichern Wartbarkeit.",
       bullets: [
         "XR Toolkit Interaktionshandling",
@@ -78,7 +78,7 @@ export const VR_BICYCLE_WORKSHOP_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "VR Ergebnisse" },
-      heading: "Vollständiger Interaktionszyklus mit klarer Nutzerführung.",
+      intro: "Vollständiger Interaktionszyklus mit klarer Nutzerführung.",
       bullets: [
         "Schnelleres Verständnis des Aufgabenflusses",
         "Reduzierte Interaktionsfehler durch Constraints",

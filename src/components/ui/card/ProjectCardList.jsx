@@ -3,7 +3,7 @@ import { projectDetailsBtn, githubBtn, redirectBtn } from "../buttons/Button";
 
 export default function ProjectCardList({ items }) {
   return (
-    <div className="grid flex-col gap-14 lg:col-span-3 xl:grid-cols-3">
+    <div className="grid w-full flex-col gap-14 md:col-span-3 md:grid-cols-3">
       {items.map(({ slug, overview }) => {
         const { title, description, stack, links = [] } = overview;
 
@@ -14,7 +14,7 @@ export default function ProjectCardList({ items }) {
         return (
           <article
             key={slug}
-            className="flex flex-col justify-between gap-6 border-b-2 p-4 transition hover:scale-102 hover:rounded-t-2xl hover:border-b-cyan-500 hover:bg-slate-200/10"
+            className="flex flex-col justify-between gap-[clamp(1rem,2vw,1.5rem)] border-b-2 p-[clamp(0.5rem,1.5vw,1rem)] transition hover:scale-102 hover:rounded-t-2xl hover:border-b-cyan-500 hover:bg-slate-200/10"
           >
             <div className="flex flex-col gap-4">
               <h3>{title}</h3>

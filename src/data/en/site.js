@@ -8,7 +8,15 @@ export const HERO = {
     target: "projects",
     variant: "primary",
   },
-  techStack: "HTML · CSS · JavaScript · React · Accessibility",
+  techStack: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Tpyescript",
+    "Tailwind",
+    "Barrierefreiheit",
+  ],
 };
 
 export const PROJECTS = {

@@ -216,3 +216,7 @@ aside {
 pre.shiki {
   background-color: transparent !important;
 }
+
+* {
+  box-sizing: border-box;
+}

@@ -27,7 +27,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "overview",
       media: { src: null, alt: "Showcase Überblick" },
-      heading:
+      intro:
         "Dashboard-Konzept zur Reduzierung kognitiver Belastung in komplexen Echtzeitsystemen.",
       bullets: [
         "Fokus auf Klarheit und Anomalieerkennung",
@@ -38,7 +38,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "challenge",
       media: { src: null, alt: "Showcase Herausforderung" },
-      heading:
+      intro:
         "Bestehende Dashboards überforderten Nutzende durch zu dichte Informationsdarstellung.",
       bullets: [
         "Hohe kognitive Belastung",
@@ -49,7 +49,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "process",
       media: { src: null, alt: "Showcase Prozess" },
-      heading:
+      intro:
         "Iterativer UX-Prozess mit strukturierter Evaluation und kontinuierlicher Verfeinerung.",
       bullets: [
         "Prototyping von Low- bis High-Fidelity",
@@ -60,7 +60,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "solution",
       media: { src: null, alt: "Showcase Lösung" },
-      heading:
+      intro:
         "Klare visuelle Hierarchie und konsistente Kodierung verbessern Orientierung und Reaktionsgeschwindigkeit.",
       bullets: [
         "Farbcodierte Statuslogik",
@@ -71,7 +71,7 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     {
       id: "results",
       media: { src: null, alt: "Showcase Ergebnisse" },
-      heading:
+      intro:
         "Die Evaluation zeigte gesteigerte Effizienz und reduzierte mentale Belastung.",
       bullets: [
         "Positive Evaluationsergebnisse",
