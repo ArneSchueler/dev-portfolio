@@ -9,7 +9,7 @@ export const PROJECT_CARDS = [
     slug: "schueler-dev-portfolio",
     tabs: ["selected", "dev"],
     overview: {
-      title: "schueler.dev Portfolio",
+      title: "schueler.dev - Portfolio",
       description:
         "Personal portfolio built to showcase UX-first frontend thinking, structured system design, and accessible user interface patterns.",
       stack: ["React", "Vite", "Tailwind CSS", "React Router"],
@@ -44,7 +44,7 @@ export const PROJECT_CARDS = [
     slug: "hattendorf-kosmetik",
     tabs: ["ux"],
     overview: {
-      title: "Hattendorf Kosmetik",
+      title: "Hattendorf Kosmetik - Redesign",
       description:
         "Website redesign for a beauty studio focusing on clarity, natural aesthetics, and trust.",
       stack: ["Figma", "UX Design", "Branding"],
@@ -56,7 +56,7 @@ export const PROJECT_CARDS = [
     slug: "frontend-showcase",
     tabs: ["selected", "ux"],
     overview: {
-      title: "Frontend Showcase",
+      title: "Frontend Showcase - Master’s thesis",
       description:
         "Master’s thesis: Interactive UI/UX concept for information visualization of autonomous vehicle fleets with a focus on cognitive load reduction.",
       stack: ["Figma", "FigJam", "Research", "Information Visualization"],
