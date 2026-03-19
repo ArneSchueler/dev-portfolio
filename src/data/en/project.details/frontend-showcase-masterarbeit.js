@@ -29,7 +29,10 @@ export const FRONTEND_SHOWCASE_DETAIL = {
   content: [
     {
       id: "overview",
-      media: { src: showCaseOverview, alt: "Showcase overview" },
+      media: {
+        src: showCaseOverview,
+        alt: "Showcase overview",
+      },
       chips: [
         { label: "Role", value: "UX/UI Designer" },
         { label: "Tools", value: "Figma, Jira, UEQ+, NASA TLX" },
@@ -46,7 +49,11 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "challenge",
-      media: { src: showCaseChallenge, alt: "Showcase challenge" },
+      media: {
+        src: showCaseChallenge,
+        caption: "Existing MoSy Monitoring interface showing visual overload",
+        alt: "Showcase challenge",
+      },
       intro:
         "Existing systems were rich in information but visually overloaded, making efficient use difficult. The core task was to prepare complex real-time data so that it remains intuitively navigable without overwhelming the user.",
       bullets: [
@@ -57,7 +64,11 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "process",
-      media: { src: showCaseProcess, alt: "Showcase process" },
+      media: {
+        src: showCaseProcess,
+        caption: "Low-fidelity wireframe establishing the new layout structure",
+        alt: "Showcase process",
+      },
       intro:
         "The development process followed an iterative UX approach with a strong focus on user-centered design. Each phase was used to further refine the interaction logic and adapt it to user needs.",
       bullets: [
@@ -68,7 +79,11 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "solution",
-      media: { src: showCaseSolution, alt: "Showcase solution" },
+      media: {
+        src: showCaseSolution,
+        caption: "Interactive device cards designed to reduce cognitive load",
+        alt: "Showcase solution",
+      },
       intro:
         "A central goal was the reduction of cognitive load. The use of scientific evaluation methods ensured that the design was not only subjectively appealing but also objectively supported the workflow.",
       bullets: [
@@ -79,7 +94,12 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "results",
-      media: { src: showCaseResult, alt: "Showcase results" },
+      media: {
+        src: showCaseResult,
+        caption:
+          "UEQ+ evaluation results demonstrating high usability and efficiency",
+        alt: "Showcase results",
+      },
       intro:
         "The thesis proves that well-founded information visualization significantly improves UX. The consistent color system and interactive elements increase user trust in the system and promote rapid decision-making.",
       bullets: [

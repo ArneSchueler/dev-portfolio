@@ -46,7 +46,12 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "challenge",
-      media: { src: showCaseChallenge, alt: "Showcase Herausforderung" },
+      media: {
+        src: showCaseChallenge,
+        caption:
+          "Bestehendes MoSy-Monitoring-Interface mit visueller Überlastung",
+        alt: "Showcase MoSy Monitoring Interface",
+      },
       intro:
         "Vorhandene Systeme waren zwar informationsreich, aber visuell überladen, was die effiziente Nutzung erschwerte. Die Kernaufgabe bestand darin, komplexe Echtzeitdaten so aufzubereiten, dass sie intuitiv navigierbar bleiben, ohne den Nutzer zu überfordern.",
       bullets: [
@@ -57,7 +62,12 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "process",
-      media: { src: showCaseProcess, alt: "Showcase Prozess" },
+      media: {
+        src: showCaseProcess,
+        caption:
+          "Low-Fidelity-Wireframe zur Etablierung der neuen Layout-Struktur",
+        alt: "Showcase Prozess",
+      },
       intro:
         "Der Entwicklungsprozess folgte einem iterativen UX-Vorgehen mit einem starken Fokus auf User-Centered Design. Jede Phase wurde genutzt, um die Interaktionslogik weiter zu verfeinern und auf Nutzerbedürfnisse anzupassen.",
       bullets: [
@@ -68,7 +78,12 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "solution",
-      media: { src: showCaseSolution, alt: "Showcase Lösung" },
+      media: {
+        src: showCaseSolution,
+        caption:
+          "Interaktive Device-Cards zur Reduzierung der kognitiven Belastung",
+        alt: "Showcase Lösung",
+      },
       intro:
         "Ein zentrales Ziel war die Reduktion der kognitiven Belastung. Durch den Einsatz wissenschaftlicher Evaluationsmethoden wurde sichergestellt, dass das Design nicht nur subjektiv gefällt, sondern objektiv die Arbeit unterstützt.",
       bullets: [
@@ -79,7 +94,12 @@ export const FRONTEND_SHOWCASE_DETAIL = {
     },
     {
       id: "results",
-      media: { src: showCaseResult, alt: "Showcase Ergebnisse" },
+      media: {
+        src: showCaseResult,
+        caption:
+          "UEQ+-Evaluierungsergebnisse, die eine hohe Usability und Effizienz belegen",
+        alt: "Showcase Ergebnisse",
+      },
       intro:
         "Die Arbeit belegt, dass eine fundierte Informationsvisualisierung die UX signifikant verbessert. Das konsistente Farbsystem und die interaktiven Elemente steigern das Vertrauen der Nutzer in das System und fördern eine schnelle Entscheidungsfindung.",
       bullets: [
