@@ -66,7 +66,9 @@ export function ProjectDetail() {
               {behance && <Button {...behanceBtn} route={behance} />}
             </div>
           </nav>
-          <h1 className="text-display font-semibold">{project.header.title}</h1>
+          <h1 className="text-display font-bold text-black">
+            {project.header.title}
+          </h1>
         </div>
         <div className="lg:col-start-2">
           <TabNavigation
@@ -141,15 +143,17 @@ export function ProjectDetail() {
             </div>
           )}
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 text-black">
           <p className="max-w-150 font-semibold">{tabContent.intro}</p>
           {tabContent.bullets && (
             <div>
               <ul className="flex flex-col gap-6">
-                {tabContent.bullets.map((bulletText) => {
+                {tabContent.bullets.map((bulletText, index) => {
                   return (
-                    <li>
-                      <span className="pe-4 text-xl text-cyan-500">/</span>
+                    <li key={index} className="flex items-start text-black">
+                      <span className="shrink-0 pe-4 text-xl text-cyan-500">
+                        /
+                      </span>
                       {bulletText}
                     </li>
                   );
