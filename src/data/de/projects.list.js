@@ -44,7 +44,7 @@ export const PROJECT_CARDS = [
     slug: "hattendorf-kosmetik",
     tabs: ["ux"],
     overview: {
-      title: "Hattendorf Kosmetik - Redesing",
+      title: "Hattendorf Kosmetik - Redesign",
       description:
         "Webdesign-Redesign für ein Kosmetikstudio mit Fokus auf Klarheit, Natürlichkeit und Vertrauen.",
       stack: ["Figma", "UX Design", "Branding"],
@@ -85,6 +85,10 @@ export const PROJECT_CARDS = [
         "VR-Prototyp für eine Produkt- und Werkstatterfahrung mit Fokus auf Interaktion.",
       stack: ["Unity", "C#", "XR"],
       links: [
+        {
+          type: "github",
+          href: "https://github.com/ArneSchueler/AVR22_BicycleShop_Schueler",
+        },
         {
           type: "external",
           href: "https://drive.google.com/file/d/1VwHO-o0TO013wi_6vUDKDh19M4beqEce/view?usp=sharing",
