@@ -81,12 +81,14 @@ export function ProjectDetail() {
         <div className="flex flex-col gap-8">
           {tabContent.media?.src && (
             <div className="group relative cursor-zoom-in">
-              <img
-                className="w-full rounded-2xl shadow"
-                src={tabContent.media.src}
-                alt={tabContent.media.alt}
-                onClick={() => setOpen(true)}
-              />
+              <div className="max-h-[500px] w-full overflow-hidden rounded-2xl shadow-md lg:max-h-[40vh]">
+                <img
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src={tabContent.media.src}
+                  alt={tabContent.media.alt}
+                  onClick={() => setOpen(true)}
+                />
+              </div>
               {tabContent.media.caption && (
                 <p className="mt-2 px-2 text-sm text-slate-600 italic">
                   {tabContent.media.caption}
