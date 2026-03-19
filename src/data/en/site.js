@@ -13,7 +13,7 @@ export const HERO = {
     "CSS",
     "JavaScript",
     "React",
-    "Tpyescript",
+    "TypeScript",
     "Tailwind",
     "Barrierefreiheit",
   ],
