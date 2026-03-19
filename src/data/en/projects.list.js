@@ -27,7 +27,7 @@ export const PROJECT_CARDS = [
     slug: "gymnio",
     tabs: ["selected", "ux"],
     overview: {
-      title: "Gymnio",
+      title: "Gymnio — AI Fitness Coach",
       description:
         "AI Fitness Coach – Dashboard concept for structured visualization of training, nutrition, and progress.",
       stack: ["Figma", "FigJam", "UX Design"],

@@ -1,14 +1,23 @@
 import gymnioOverview from "../../../assets/images/gymnio/GYMNIO-dashboard-overview.png";
+import gymnioOnboarding from "../../../assets/images/gymnio/GYMNIO-dashboard-onboarding.png";
+import gymnioUserFlow from "../../../assets/images/gymnio/userflow-edit.png";
+import gymnioWireframe from "../../../assets/images/gymnio/gymnio-wireframe.png";
+import gymnioDesignSystem from "../../../assets/images/gymnio/gymnio-designsystem.png";
 
 export const GYMNIO_DETAIL = {
   slug: "gymnio",
 
   header: {
     breadcrumb: [{ label: "UX", route: "/projects" }, { label: "Gymnio" }],
-    title: "Gymnio — AI Fitness Coach",
+    title: "Gymnio",
     subtitle:
       "Dashboard concept consolidating training, nutrition, and coaching into one single application.",
-    links: [{ type: "behance", href: "https://github.com/placeholder/gymnio" }],
+    links: [
+      {
+        type: "behance",
+        href: "https://www.behance.net/gallery/234946097/GYMNIO-Your-AI-fitness-coach",
+      },
+    ],
   },
 
   tabs: [
@@ -30,55 +39,55 @@ export const GYMNIO_DETAIL = {
         { label: "Year", value: "2025" },
       ],
       intro:
-        "Concept for a modular fitness dashboard to support clarity and motivation.",
+        "Gymnio is an AI-powered fitness platform acting as a personal digital coach. The project focuses on uniting training, nutrition, and progress analysis into a seamless, data-driven dashboard.",
       bullets: [
-        "Training, nutrition, and progress united",
-        "Clear visual hierarchy",
-        "Modular dashboard structure",
+        "Centralized hub: All relevant metrics in one place instead of fragmented data.",
+        'AI companion: "Coach Sam" provides personalized insights and motivating feedback based on user behavior.',
+        "Clear prioritization: Focus on the essentials to avoid overwhelming the user with raw data.",
       ],
     },
     {
       id: "challenge",
-      media: { src: null, alt: "Gymnio challenge" },
+      media: { src: gymnioOnboarding, alt: "Gymnio challenge" },
       intro:
-        "Many fitness apps overwhelm users and fragment essential information.",
+        "The biggest hurdle of modern fitness apps is information overload. While many apps offer a lot of data, they lack clear orientation. The challenge was to develop a dashboard that works for both beginners and advanced users, making personalized goals tangible.",
       bullets: [
-        "Scattered content and navigation",
-        "Low motivation due to unclear progress",
-        "Lack of structural clarity",
+        "Lack of structure: Cluttered data without direct context for action.",
+        "No personalization: Static plans that do not react to daily progress.",
+        "Loss of motivation: Missing visual feedback for long-term goal achievement.",
       ],
     },
     {
       id: "process",
-      media: { src: null, alt: "Gymnio process" },
+      media: { src: gymnioWireframe, alt: "Gymnio process" },
       intro:
-        "Iterative design shifting from low-fidelity structures to a high-fidelity system.",
+        "The process was aimed at building a systematic design framework. From the initial structuring of the information hierarchy to the final high-fidelity system, the focus remained on user guidance.",
       bullets: [
-        "Lo-Fi layout exploration",
-        "Interaction refinement",
-        "Consistent design system foundation",
+        "Modular architecture: Development of a grid system for flexible widgets (cards).",
+        "Inclusive design: Focus on accessibility through high contrast ratios and clear, readable typography.",
+        "Clean aesthetic: A bright, friendly UI design conveying professionalism and clarity.",
       ],
     },
     {
       id: "solution",
-      media: { src: null, alt: "Gymnio solution" },
+      media: { src: gymnioUserFlow, alt: "Gymnio solution" },
       intro:
-        "A structured dashboard transparently connects goals, training plans, and progress.",
+        "The solution is an adaptable dashboard tailored to the user. A thoughtful flow enables seamless transitions between high-level overviews and detailed performance data, while the AI moderates the experience.",
       bullets: [
-        "Modular widget system",
-        "Clear feedback loops",
-        "Coherent user flow",
+        "Interactive widgets: Weekly volume, performance trends, and recipe suggestions.",
+        "Smart feedback: Coach Sam provides proactive tips (e.g., weight progression or nutrition advice).",
+        "Seamless navigation: Quick access to training history and goal tracking.",
       ],
     },
     {
       id: "results",
-      media: { src: null, alt: "Gymnio results" },
+      media: { src: gymnioDesignSystem, alt: "Gymnio results" },
       intro:
-        "A consistent concept with increased clarity and perceived motivation.",
+        "Gymnio demonstrates how modular design and AI can transform the user experience. The result is a platform that reduces complexity and strengthens commitment to fitness goals through clear visual feedback.",
       bullets: [
-        "Improved orientation",
-        "Higher transparency",
-        "Learning: Structure drives engagement",
+        "Scalability: The design system can be easily expanded with new features.",
+        "User trust: Transparent progress visualization through clear charts and benchmarks.",
+        "Increased focus: Minimizing search time within the app.",
       ],
     },
   ],
