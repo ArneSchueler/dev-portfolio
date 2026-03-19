@@ -37,11 +37,11 @@ export function ProjectDetail() {
   const behance = links.find((link) => link.type === "behance")?.href;
 
   return (
-    <main className="flex h-fit min-h-screen flex-col p-6 sm:ms-40 sm:px-40 sm:pt-40 md:ms-30">
-      <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-12 2xl:grid-cols-[minmax(550px,2fr)_3fr]">
-        <div className="lg:col-start-1">
+    <main className="flex h-fit min-h-screen flex-col p-6 py-40 sm:ms-40 sm:px-40 sm:pt-40 md:ms-30">
+      <div className="grid items-start justify-center gap-x-20 gap-y-12 p-6 lg:max-w-400 2xl:grid-cols-[minmax(550px,2fr)_3fr]">
+        <div className="flex flex-col items-center gap-6 sm:items-start lg:col-start-1">
           <nav
-            className="flex items-center justify-between"
+            className="flex w-full flex-col items-center justify-between gap-6 sm:flex-row"
             aria-label="Breadcrumb"
           >
             <ol className="flex gap-2">
@@ -66,7 +66,7 @@ export function ProjectDetail() {
               {behance && <Button {...behanceBtn} route={behance} />}
             </div>
           </nav>
-          <h1 className="text-display font-bold text-black">
+          <h1 className="text-display text-font-bold text-black sm:text-left">
             {project.header.title}
           </h1>
         </div>

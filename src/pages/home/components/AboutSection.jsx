@@ -11,7 +11,9 @@ export function AboutSection() {
 
   return (
     <div className="grid max-w-400 items-start justify-center gap-x-20 gap-y-8 lg:grid-cols-3">
-      <h1 className="text-display font-semibold">{ABOUT.title}</h1>
+      <h1 className="text-display text-center font-semibold sm:text-left">
+        {ABOUT.title}
+      </h1>
       <TabNavigation
         items={ABOUT_TABS}
         currentTab={currentTab}

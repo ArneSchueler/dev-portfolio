@@ -15,7 +15,9 @@ export function ProjectsSection() {
 
   return (
     <div className="grid w-full max-w-400 items-start justify-center gap-x-20 gap-y-8 md:grid-cols-[1fr_3fr]">
-      <h1 className="text-display font-semibold">{PROJECTS.title}</h1>
+      <h1 className="text-display text-center font-semibold sm:text-left">
+        {PROJECTS.title}
+      </h1>
       <TabNavigation
         items={PROJECT_TABS}
         currentTab={currentTab}
