@@ -15,7 +15,7 @@ export const HERO = {
     "React",
     "TypeScript",
     "Tailwind",
-    "Barrierefreiheit",
+    "Accessibility",
   ],
 };
 
