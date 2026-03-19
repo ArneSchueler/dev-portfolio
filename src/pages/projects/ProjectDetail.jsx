@@ -87,6 +87,11 @@ export function ProjectDetail() {
                 alt={tabContent.media.alt}
                 onClick={() => setOpen(true)}
               />
+              {tabContent.media.caption && (
+                <p className="mt-2 px-2 text-sm text-slate-600 italic">
+                  {tabContent.media.caption}
+                </p>
+              )}
               <div className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl bg-black/10 opacity-0 transition-opacity group-hover:opacity-100">
                 <span className="rounded-full bg-white/90 p-2 text-sm font-medium shadow-md">
                   <Icon className="text-4xl" icon={ICONS.enlarge}></Icon>
