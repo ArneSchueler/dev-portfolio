@@ -39,9 +39,9 @@ export function ProjectDetail() {
   return (
     <main className="flex h-fit min-h-screen w-full flex-col p-6 py-20 sm:ms-40 sm:px-40 sm:pt-40 md:ms-30">
       <div className="grid items-start justify-center gap-x-20 gap-y-12 p-6 lg:max-w-400 2xl:grid-cols-[minmax(550px,2fr)_3fr]">
-        <div className="flex flex-col items-center gap-6 sm:items-start lg:col-start-1">
+        <div className="flex flex-col items-start gap-6 lg:col-start-1">
           <nav
-            className="flex w-full flex-col items-center justify-between gap-6 sm:flex-row"
+            className="flex w-full items-center justify-between gap-6"
             aria-label="Breadcrumb"
           >
             <ol className="flex gap-2">
